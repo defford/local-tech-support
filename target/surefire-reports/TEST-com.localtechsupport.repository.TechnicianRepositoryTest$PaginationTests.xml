@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.634" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.44" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250622172358005_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-22T17-23-57_918-jvmRun1 surefire-20250622172358005_1tmp surefire_0-20250622172358005_2tmp"/>
+    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250622195534108_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-22T19-55-33_987-jvmRun1 surefire-20250622195534108_1tmp surefire_0-20250622195534108_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/test-classes:/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/classes:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.5.0/spring-boot-starter-data-jpa-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter/3.5.0/spring-boot-starter-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.5.0/spring-boot-starter-logging-3.5.0.jar:/Users/danielefford/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar:/Users/danielefford/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar:/Users/danielefford/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/danielefford/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/danielefford/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/Users/danielefford/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/danielefford/.m2/repository/org/yaml/snakeyaml/2.4/snakeyaml-2.4.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.5.0/spring-boot-starter-jdbc-3.5.0.jar:/Users/danielefford/.m2/repository/com/zaxxer/HikariCP/6.3.0/HikariCP-6.3.0.jar:/Users/danielefford/.m2/repository/org/springframework/spring-jdbc/6.2.7/spring-jdbc-6.2.7.jar:/Users/danielefford/.m2/repository/org/hibernate/orm/hibernate-core/6.6.15.Final/hibernate-core-6.6.15.Final.jar:/Users/danielefford/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/danielefford/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/danielefford/.m2/repository/org/jboss/logging/jboss-logging/3.6.1.Final/jboss-logging-3.6.1.Final.jar:/Users/danielefford/.m2/repository/org/hibernate/common/hibernate-commons-annotations/7.0.3.Final/hibernate-commons-annotations-7.0.3.Final.jar:/Users/danielefford/.m2/repository/io/smallrye/jandex/3.2.0/jandex-3.2.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/Users/danielefford/.m2/repository/net/bytebuddy/byte-buddy/1.17.5/byte-buddy-1.17.5.jar:/Users/danielefford/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/danielefford/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/danielefford/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/danielefford/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/danielefford/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/danielefford/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/danielefford/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/danielefford/.m2/repository/org/springframework/data/spring-data-jpa/3.5.0/spring-data-jpa-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/data/spring-data-commons/3.5.0/spring-data-commons-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/spring-orm/6.2.7/spring-orm-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-context/6.2.7/spring-context-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-aop/6.2.7/spring-aop-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-tx/6.2.7/spring-tx-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-beans/6.2.7/spring-beans-6.2.7.jar:/Users/danielefford/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/danielefford/.m2/repository/org/springframework/spring-aspects/6.2.7/spring-aspects-6.2.7.jar:/Users/danielefford/.m2/repository/org/aspectj/aspectjweaver/1.9.24/aspectjweaver-1.9.24.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.5.0/spring-boot-starter-web-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.5.0/spring-boot-starter-json-3.5.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.0/jackson-databind-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.0/jackson-annotations-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.0/jackson-core-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.19.0/jackson-datatype-jdk8-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.19.0/jackson-datatype-jsr310-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.19.0/jackson-module-parameter-names-2.19.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.5.0/spring-boot-starter-tomcat-3.5.0.jar:/Users/danielefford/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.41/tomcat-embed-core-10.1.41.jar:/Users/danielefford/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.41/tomcat-embed-websocket-10.1.41.jar:/Users/danielefford/.m2/repository/org/springframework/spring-web/6.2.7/spring-web-6.2.7.jar:/Users/danielefford/.m2/repository/io/micrometer/micrometer-observation/1.15.0/micrometer-observation-1.15.0.jar:/Users/danielefford/.m2/repository/io/micrometer/micrometer-commons/1.15.0/micrometer-commons-1.15.0.jar:/Users/danielefford/.m2/repository/org/springframework/spring-webmvc/6.2.7/spring-webmvc-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-expression/6.2.7/spring-expression-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-devtools/3.5.0/spring-boot-devtools-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot/3.5.0/spring-boot-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.5.0/spring-boot-autoconfigure-3.5.0.jar:/Users/danielefford/.m2/repository/com/h2database/h2/2.3.232/h2-2.3.232.jar:/Users/danielefford/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:/Users/danielefford/.m2/repository/com/mysql/mysql-connector-j/9.2.0/mysql-connector-j-9.2.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.5.0/spring-boot-starter-validation-3.5.0.jar:/Users/danielefford/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.41/tomcat-embed-el-10.1.41.jar:/Users/danielefford/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.2.Final/hibernate-validator-8.0.2.Final.jar:/Users/danielefford/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.5.0/spring-boot-starter-test-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-test/3.5.0/spring-boot-test-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.5.0/spring-boot-test-autoconfigure-3.5.0.jar:/Users/danielefford/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/danielefford/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/danielefford/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/danielefford/.m2/repository/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar:/Users/danielefford/.m2/repository/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar:/Users/danielefford/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/Users/danielefford/.m2/repository/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar:/Users/danielefford/.m2/repository/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar:/Users/danielefford/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/Users/danielefford/.m2/repository/org/junit/jupiter/junit-jupiter/5.12.2/junit-jupiter-5.12.2.jar:/Users/danielefford/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar:/Users/danielefford/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/danielefford/.m2/repository/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar:/Users/danielefford/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/danielefford/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar:/Users/danielefford/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar:/Users/danielefford/.m2/repository/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar:/Users/danielefford/.m2/repository/org/mockito/mockito-core/5.17.0/mockito-core-5.17.0.jar:/Users/danielefford/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.5/byte-buddy-agent-1.17.5.jar:/Users/danielefford/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/danielefford/.m2/repository/org/mockito/mockito-junit-jupiter/5.17.0/mockito-junit-jupiter-5.17.0.jar:/Users/danielefford/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/danielefford/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/danielefford/.m2/repository/org/springframework/spring-core/6.2.7/spring-core-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-jcl/6.2.7/spring-jcl-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-test/6.2.7/spring-test-6.2.7.jar:/Users/danielefford/.m2/repository/org/xmlunit/xmlunit-core/2.10.1/xmlunit-core-2.10.1.jar:/Users/danielefford/.m2/repository/com/unboundid/unboundid-ldapsdk/7.0.2/unboundid-ldapsdk-7.0.2.jar:"/>
@@ -34,7 +34,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250622172358005_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250622195534108_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -53,7 +53,7 @@
     <property name="user.dir" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="67871"/>
+    <property name="PID" value="23595"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/danielefford/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -66,10 +66,10 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[tech-support-server] "/>
   </properties>
-  <testcase name="shouldHandleSortingByFullNameAscending" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.237">
-    <system-out><![CDATA[2025-06-22T17:24:15.024-02:30  INFO 67871 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests]: PaginationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-06-22T17:24:15.067-02:30  INFO 67871 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests
-2025-06-22T17:24:15.082-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleSortingByFullNameAscending" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.063">
+    <system-out><![CDATA[2025-06-22T19:55:52.969-02:30  INFO 23595 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests]: PaginationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-22T19:55:52.981-02:30  INFO 23595 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests
+2025-06-22T19:55:52.991-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -85,7 +85,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-22T17:24:15.087-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:52.993-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -99,7 +99,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.093-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:52.995-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -113,7 +113,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.095-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:52.997-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -127,7 +127,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.100-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:52.998-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -141,7 +141,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.102-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.001-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -155,7 +155,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.104-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.003-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -169,7 +169,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.106-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.005-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -183,7 +183,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.108-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.006-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -197,7 +197,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.111-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.007-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -211,7 +211,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.113-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.008-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -225,7 +225,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.116-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.010-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -239,7 +239,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.118-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.011-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -253,7 +253,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.121-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.012-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -267,7 +267,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.124-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.014-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -281,7 +281,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.131-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.016-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -295,7 +295,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.266-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.028-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -323,7 +323,7 @@ Hibernate:
         ? rows 
     fetch
         first ? rows only
-2025-06-22T17:24:15.283-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.034-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(t1_0.id) 
     from
@@ -335,8 +335,8 @@ Hibernate:
         technicians t1_0
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleSortingByEmailDescending" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.109">
-    <system-out><![CDATA[2025-06-22T17:24:15.335-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleSortingByEmailDescending" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.04">
+    <system-out><![CDATA[2025-06-22T19:55:53.053-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -352,7 +352,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-22T17:24:15.346-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.057-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -366,7 +366,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.352-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.058-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -380,7 +380,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.357-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.059-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -394,7 +394,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.360-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.060-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -408,7 +408,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.361-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.061-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -422,7 +422,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.364-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.061-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -436,7 +436,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.369-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.063-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -450,7 +450,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.371-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.063-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -464,7 +464,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.374-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.064-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -478,7 +478,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.377-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.065-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -492,7 +492,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.379-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.065-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -506,7 +506,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.382-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.066-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -520,7 +520,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.386-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.067-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -534,7 +534,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.389-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.067-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -548,7 +548,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.393-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.068-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -562,7 +562,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.404-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.072-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -590,7 +590,7 @@ Hibernate:
         ? rows 
     fetch
         first ? rows only
-2025-06-22T17:24:15.410-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.078-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(t1_0.id) 
     from
@@ -602,8 +602,8 @@ Hibernate:
         technicians t1_0
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleFirstPageCorrectly" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.066">
-    <system-out><![CDATA[2025-06-22T17:24:15.436-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleFirstPageCorrectly" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.043">
+    <system-out><![CDATA[2025-06-22T19:55:53.097-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -619,7 +619,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-22T17:24:15.439-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.099-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -633,7 +633,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.442-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.101-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -647,7 +647,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.443-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.102-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -661,7 +661,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.443-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.103-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -675,7 +675,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.444-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.103-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -689,7 +689,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.446-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.104-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -703,7 +703,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.447-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.106-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -717,7 +717,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.449-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.107-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -731,7 +731,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.452-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.108-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -745,7 +745,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.453-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.109-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -759,7 +759,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.454-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.110-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -773,7 +773,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.455-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.111-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -787,7 +787,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.456-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.111-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -801,7 +801,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.457-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.113-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -815,7 +815,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.458-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.114-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -829,7 +829,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.477-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.121-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -853,7 +853,7 @@ Hibernate:
         t1_0.status=? 
     fetch
         first ? rows only
-2025-06-22T17:24:15.483-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.126-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(t1_0.id) 
     from
@@ -869,8 +869,8 @@ Hibernate:
         t1_0.status=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleEmptyResultsWithPagination" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.05">
-    <system-out><![CDATA[2025-06-22T17:24:15.500-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleEmptyResultsWithPagination" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.054">
+    <system-out><![CDATA[2025-06-22T19:55:53.144-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -886,7 +886,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-22T17:24:15.504-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.149-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -900,7 +900,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.505-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.152-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -914,7 +914,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.506-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.155-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -928,7 +928,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.507-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.156-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -942,7 +942,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.508-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.157-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -956,7 +956,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.509-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.158-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -970,7 +970,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.511-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.159-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -984,7 +984,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.512-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.159-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -998,7 +998,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.512-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.160-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1012,7 +1012,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.514-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.161-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1026,7 +1026,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.516-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.163-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1040,7 +1040,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.519-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.164-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1054,7 +1054,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.520-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.165-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1068,7 +1068,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.522-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.166-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1082,7 +1082,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.525-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.167-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1096,7 +1096,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.530-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.175-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -1122,8 +1122,8 @@ Hibernate:
         first ? rows only
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandlePageBeyondAvailableData" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.038">
-    <system-out><![CDATA[2025-06-22T17:24:15.552-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandlePageBeyondAvailableData" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.065">
+    <system-out><![CDATA[2025-06-22T19:55:53.198-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -1139,7 +1139,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-22T17:24:15.555-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.200-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1153,7 +1153,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.557-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.202-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1167,7 +1167,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.558-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.203-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1181,7 +1181,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.559-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.205-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1195,7 +1195,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.560-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.207-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1209,7 +1209,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.561-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.208-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1223,7 +1223,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.562-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.209-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1237,7 +1237,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.562-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.210-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1251,7 +1251,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.563-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.212-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1265,7 +1265,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.564-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.213-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1279,7 +1279,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.567-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.216-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1293,7 +1293,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.569-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.221-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1307,7 +1307,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.570-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.226-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1321,7 +1321,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.571-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.230-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1335,7 +1335,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.571-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.233-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1349,7 +1349,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.576-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.244-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -1373,7 +1373,7 @@ Hibernate:
         ? rows 
     fetch
         first ? rows only
-2025-06-22T17:24:15.578-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.249-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(t1_0.id) 
     from
@@ -1385,8 +1385,8 @@ Hibernate:
         technicians t1_0
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleMiddlePageCorrectly" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.031">
-    <system-out><![CDATA[2025-06-22T17:24:15.589-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleMiddlePageCorrectly" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.072">
+    <system-out><![CDATA[2025-06-22T19:55:53.265-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -1402,7 +1402,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-22T17:24:15.592-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.270-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1416,7 +1416,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.594-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.273-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1430,7 +1430,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.595-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.275-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1444,7 +1444,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.596-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.277-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1458,7 +1458,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.597-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.279-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1472,7 +1472,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.598-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.280-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1486,7 +1486,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.600-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.282-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1500,7 +1500,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.601-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.283-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1514,7 +1514,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.601-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.285-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1528,7 +1528,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.602-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.287-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1542,7 +1542,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.603-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.290-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1556,7 +1556,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.604-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.292-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1570,7 +1570,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.605-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.294-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1584,7 +1584,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.605-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.296-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1598,7 +1598,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.606-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.298-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1612,7 +1612,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.610-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.306-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -1636,7 +1636,7 @@ Hibernate:
         ? rows 
     fetch
         first ? rows only
-2025-06-22T17:24:15.612-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.317-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(t1_0.id) 
     from
@@ -1648,8 +1648,8 @@ Hibernate:
         technicians t1_0
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleLastPageCorrectly" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.032">
-    <system-out><![CDATA[2025-06-22T17:24:15.624-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleLastPageCorrectly" classname="com.localtechsupport.repository.TechnicianRepositoryTest$PaginationTests" time="0.07">
+    <system-out><![CDATA[2025-06-22T19:55:53.343-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -1665,7 +1665,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-22T17:24:15.626-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.347-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1679,7 +1679,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.628-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.350-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1693,7 +1693,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.629-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.352-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1707,7 +1707,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.630-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.353-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1721,7 +1721,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.631-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.355-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1735,7 +1735,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.633-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.358-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1749,7 +1749,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.634-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.359-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1763,7 +1763,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.635-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.361-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1777,7 +1777,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.636-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.362-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1791,7 +1791,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.637-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.363-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1805,7 +1805,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.637-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.364-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1819,7 +1819,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.638-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.365-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1833,7 +1833,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.639-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.369-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1847,7 +1847,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.639-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.374-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1861,7 +1861,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.640-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.378-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1875,7 +1875,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-22T17:24:15.645-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.394-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -1899,7 +1899,7 @@ Hibernate:
         ? rows 
     fetch
         first ? rows only
-2025-06-22T17:24:15.647-02:30 DEBUG 67871 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-22T19:55:53.398-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(t1_0.id) 
     from

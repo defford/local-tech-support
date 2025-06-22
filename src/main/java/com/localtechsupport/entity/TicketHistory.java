@@ -37,6 +37,7 @@ public class TicketHistory {
     @PrePersist
     protected void onCreate() {
         createdAt = Instant.now();
+        updatedAt = Instant.now();
     }
 
     @PreUpdate

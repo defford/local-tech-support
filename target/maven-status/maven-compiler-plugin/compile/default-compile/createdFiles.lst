@@ -1,11 +1,14 @@
 com/localtechsupport/entity/Client$SupportLevel.class
 com/localtechsupport/dto/package-info.class
 com/localtechsupport/entity/Appointment.class
+com/localtechsupport/repository/TicketHistoryRepository.class
 com/localtechsupport/repository/TechnicianRepository.class
 com/localtechsupport/entity/TicketHistory.class
+com/localtechsupport/repository/AppointmentRepository.class
 com/localtechsupport/entity/TicketStatus.class
 com/localtechsupport/entity/Client$ClientStatus.class
 com/localtechsupport/TechSupportServerApplication.class
+com/localtechsupport/repository/FeedbackEntryRepository.class
 com/localtechsupport/repository/TicketRepository.class
 com/localtechsupport/entity/FeedbackEntry.class
 com/localtechsupport/entity/package-info.class
