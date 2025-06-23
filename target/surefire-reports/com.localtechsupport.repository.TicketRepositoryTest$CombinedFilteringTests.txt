@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.localtechsupport.repository.TicketRepositoryTest$CombinedFilteringTests
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.539 s -- in com.localtechsupport.repository.TicketRepositoryTest$CombinedFilteringTests
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.690 s -- in com.localtechsupport.repository.TicketRepositoryTest$CombinedFilteringTests

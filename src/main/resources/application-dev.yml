@@ -1,0 +1,20 @@
+# Development Profile Configuration
+# This profile loads sample data for development and testing purposes
+# To use: mvn spring-boot:run -Dspring-boot.run.profiles=dev
+
+spring:
+  # JPA Configuration for Development
+  jpa:
+    defer-datasource-initialization: true
+  
+  # SQL Data Loading (only in dev profile)
+  sql:
+    init:
+      mode: always
+      data-locations: classpath:data.sql
+
+# Development-specific logging
+logging:
+  level:
+    org.springframework.jdbc.datasource.init: DEBUG
+    com.localtechsupport: DEBUG 

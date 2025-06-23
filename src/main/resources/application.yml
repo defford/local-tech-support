@@ -19,6 +19,11 @@ spring:
         format_sql: true
         dialect: org.hibernate.dialect.H2Dialect
   
+  # SQL Data Loading (disabled by default - enabled only in dev profile)
+  sql:
+    init:
+      mode: never
+  
   # H2 Console (for development)
   h2:
     console:

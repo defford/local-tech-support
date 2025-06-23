@@ -1,4 +1,5 @@
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/test/java/com/localtechsupport/TechSupportServerApplicationTests.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/test/java/com/localtechsupport/controller/TicketControllerTest.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/test/java/com/localtechsupport/entity/AppointmentTest.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/test/java/com/localtechsupport/entity/ClientTest.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/test/java/com/localtechsupport/entity/FeedbackEntryTest.java
@@ -13,3 +14,4 @@
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/test/java/com/localtechsupport/repository/TechnicianSkillRepositoryTest.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/test/java/com/localtechsupport/repository/TicketHistoryRepositoryTest.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/test/java/com/localtechsupport/repository/TicketRepositoryTest.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/test/java/com/localtechsupport/service/TicketServiceTest.java
