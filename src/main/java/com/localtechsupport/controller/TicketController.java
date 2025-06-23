@@ -200,7 +200,7 @@ public class TicketController {
      */
     @GetMapping("/search")
     public ResponseEntity<Page<TicketResponse>> searchTickets(
-            @RequestParam String q,
+            @RequestParam String query,
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "20") int size,
             @RequestParam(defaultValue = "createdAt") String sortBy,
@@ -210,7 +210,7 @@ public class TicketController {
             Sort.Direction.DESC : Sort.Direction.ASC, sortBy);
         Pageable pageable = PageRequest.of(page, size, sort);
         
-        Page<Ticket> tickets = ticketService.searchTickets(q, pageable);
+        Page<Ticket> tickets = ticketService.searchTickets(query, pageable);
         Page<TicketResponse> response = tickets.map(this::mapToTicketResponse);
         
         return ResponseEntity.ok(response);
