@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.055" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.083" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T16-56-29_848-jvmRun1 surefire-20250623165629917_1tmp surefire_0-20250623165629917_2tmp"/>
+    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T17-05-30_331-jvmRun1 surefire-20250623170530409_1tmp surefire_0-20250623170530409_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="*RepositoryTest"/>
@@ -35,7 +35,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -54,7 +54,7 @@
     <property name="user.dir" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="32586"/>
+    <property name="PID" value="54740"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/danielefford/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -67,10 +67,10 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[tech-support-server] "/>
   </properties>
-  <testcase name="shouldCountAllClientsCorrectly" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.007">
-    <system-out><![CDATA[2025-06-23T16:56:46.464-02:30  INFO 32586 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests]: StandardCrudTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-06-23T16:56:46.468-02:30  INFO 32586 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests
-2025-06-23T16:56:46.471-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldCountAllClientsCorrectly" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.011">
+    <system-out><![CDATA[2025-06-23T17:05:51.767-02:30  INFO 54740 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests]: StandardCrudTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-23T17:05:51.774-02:30  INFO 54740 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests
+2025-06-23T17:05:51.780-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -98,7 +98,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.472-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.782-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -112,7 +112,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.473-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.784-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -126,7 +126,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.473-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.784-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -140,7 +140,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.474-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.786-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(*) 
     from
@@ -152,8 +152,8 @@ Hibernate:
         clients c1_0
 ]]></system-out>
   </testcase>
-  <testcase name="shouldReturnEmptyWhenFindingByNonExistingId" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.005">
-    <system-out><![CDATA[2025-06-23T16:56:46.479-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldReturnEmptyWhenFindingByNonExistingId" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.006">
+    <system-out><![CDATA[2025-06-23T17:05:51.792-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -181,7 +181,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.480-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.793-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -215,8 +215,8 @@ Hibernate:
         c1_0.id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFindAllClients" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.005">
-    <system-out><![CDATA[2025-06-23T16:56:46.484-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldFindAllClients" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.008">
+    <system-out><![CDATA[2025-06-23T17:05:51.798-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -244,7 +244,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.485-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.799-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -258,7 +258,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.486-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.800-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -272,7 +272,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.486-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.800-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -286,7 +286,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.487-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.801-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -316,8 +316,8 @@ Hibernate:
         clients c1_0
 ]]></system-out>
   </testcase>
-  <testcase name="shouldUpdateExistingClientSuccessfully" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.008">
-    <system-out><![CDATA[2025-06-23T16:56:46.490-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldUpdateExistingClientSuccessfully" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.012">
+    <system-out><![CDATA[2025-06-23T17:05:51.807-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -345,7 +345,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.491-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.810-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -359,84 +359,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.492-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.address,
-        c1_0.created_at,
-        c1_0.email,
-        c1_0.first_name,
-        c1_0.last_name,
-        c1_0.notes,
-        c1_0.phone,
-        c1_0.status,
-        c1_0.updated_at 
-    from
-        clients c1_0 
-    where
-        c1_0.id=?
-Hibernate: 
-    select
-        c1_0.id,
-        c1_0.address,
-        c1_0.created_at,
-        c1_0.email,
-        c1_0.first_name,
-        c1_0.last_name,
-        c1_0.notes,
-        c1_0.phone,
-        c1_0.status,
-        c1_0.updated_at 
-    from
-        clients c1_0 
-    where
-        c1_0.id=?
-]]></system-out>
-  </testcase>
-  <testcase name="shouldDeleteClientById" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.005">
-    <system-out><![CDATA[2025-06-23T16:56:46.500-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    select
-        c1_0.id,
-        c1_0.address,
-        c1_0.created_at,
-        c1_0.email,
-        c1_0.first_name,
-        c1_0.last_name,
-        c1_0.notes,
-        c1_0.phone,
-        c1_0.status,
-        c1_0.updated_at 
-    from
-        clients c1_0
-Hibernate: 
-    select
-        c1_0.id,
-        c1_0.address,
-        c1_0.created_at,
-        c1_0.email,
-        c1_0.first_name,
-        c1_0.last_name,
-        c1_0.notes,
-        c1_0.phone,
-        c1_0.status,
-        c1_0.updated_at 
-    from
-        clients c1_0
-2025-06-23T16:56:46.501-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        clients
-        (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
-    values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-Hibernate: 
-    insert 
-    into
-        clients
-        (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
-    values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.502-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.812-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -470,8 +393,8 @@ Hibernate:
         c1_0.id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFindClientByExistingId" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.005">
-    <system-out><![CDATA[2025-06-23T16:56:46.507-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldDeleteClientById" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.007">
+    <system-out><![CDATA[2025-06-23T17:05:51.821-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -499,7 +422,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.507-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.822-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -513,7 +436,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.508-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.823-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -547,8 +470,8 @@ Hibernate:
         c1_0.id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldReturnEmptyListWhenNoClientsExist" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.004">
-    <system-out><![CDATA[2025-06-23T16:56:46.511-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldFindClientByExistingId" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.009">
+    <system-out><![CDATA[2025-06-23T17:05:51.830-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -576,7 +499,84 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.512-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.831-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        clients
+        (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        clients
+        (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+2025-06-23T17:05:51.832-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.notes,
+        c1_0.phone,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        clients c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.notes,
+        c1_0.phone,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        clients c1_0 
+    where
+        c1_0.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="shouldReturnEmptyListWhenNoClientsExist" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.005">
+    <system-out><![CDATA[2025-06-23T17:05:51.839-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.notes,
+        c1_0.phone,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        clients c1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.notes,
+        c1_0.phone,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        clients c1_0
+2025-06-23T17:05:51.840-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -606,8 +606,8 @@ Hibernate:
         clients c1_0
 ]]></system-out>
   </testcase>
-  <testcase name="shouldSaveNewClientSuccessfully" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.004">
-    <system-out><![CDATA[2025-06-23T16:56:46.515-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldSaveNewClientSuccessfully" classname="com.localtechsupport.repository.ClientRepositoryTest$StandardCrudTests" time="0.005">
+    <system-out><![CDATA[2025-06-23T17:05:51.846-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -635,7 +635,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.516-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.847-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients

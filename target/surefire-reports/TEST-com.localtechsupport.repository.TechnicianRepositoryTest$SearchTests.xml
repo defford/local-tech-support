@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.109" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.107" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T16-56-29_848-jvmRun1 surefire-20250623165629917_1tmp surefire_0-20250623165629917_2tmp"/>
+    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T17-05-30_331-jvmRun1 surefire-20250623170530409_1tmp surefire_0-20250623170530409_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="*RepositoryTest"/>
@@ -35,7 +35,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -54,7 +54,7 @@
     <property name="user.dir" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="32586"/>
+    <property name="PID" value="54740"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/danielefford/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -67,10 +67,10 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[tech-support-server] "/>
   </properties>
-  <testcase name="shouldHandlePartialMatches" classname="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.016">
-    <system-out><![CDATA[2025-06-23T16:56:41.914-02:30  INFO 32586 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests]: SearchTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-06-23T16:56:41.921-02:30  INFO 32586 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests
-2025-06-23T16:56:41.925-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandlePartialMatches" classname="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.019">
+    <system-out><![CDATA[2025-06-23T17:05:46.709-02:30  INFO 54740 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests]: SearchTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-23T17:05:46.717-02:30  INFO 54740 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests
+2025-06-23T17:05:46.723-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -86,7 +86,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-23T16:56:41.927-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.725-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -100,7 +100,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.928-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.727-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -114,7 +114,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.928-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.728-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -128,7 +128,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.933-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.733-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -156,8 +156,8 @@ Hibernate:
         first ? rows only
 ]]></system-out>
   </testcase>
-  <testcase name="shouldPerformCaseInsensitiveSearch" classname="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.014">
-    <system-out><![CDATA[2025-06-23T16:56:41.942-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldPerformCaseInsensitiveSearch" classname="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.016">
+    <system-out><![CDATA[2025-06-23T17:05:46.743-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -173,7 +173,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-23T16:56:41.943-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.745-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -187,7 +187,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.944-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.745-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -201,7 +201,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.945-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.746-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -215,7 +215,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.947-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.749-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -241,7 +241,7 @@ Hibernate:
         or lower(t1_0.email) like lower(('%'||?||'%')) escape '' 
     fetch
         first ? rows only
-2025-06-23T16:56:41.949-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.752-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -267,7 +267,7 @@ Hibernate:
         or lower(t1_0.email) like lower(('%'||?||'%')) escape '' 
     fetch
         first ? rows only
-2025-06-23T16:56:41.951-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.754-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -295,8 +295,8 @@ Hibernate:
         first ? rows only
 ]]></system-out>
   </testcase>
-  <testcase name="shouldReturnEmptyResultForNoMatches" classname="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.013">
-    <system-out><![CDATA[2025-06-23T16:56:41.958-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldReturnEmptyResultForNoMatches" classname="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.011">
+    <system-out><![CDATA[2025-06-23T17:05:46.760-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -312,7 +312,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-23T16:56:41.960-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.762-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -326,7 +326,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.961-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.762-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -340,7 +340,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.962-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.763-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -354,7 +354,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.965-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.764-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -383,7 +383,7 @@ Hibernate:
 ]]></system-out>
   </testcase>
   <testcase name="shouldSearchTechniciansByFullName" classname="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.011">
-    <system-out><![CDATA[2025-06-23T16:56:41.972-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    <system-out><![CDATA[2025-06-23T17:05:46.771-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -399,7 +399,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-23T16:56:41.974-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.772-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -413,7 +413,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.975-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.773-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -427,7 +427,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.976-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.774-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -441,7 +441,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.978-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.776-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -470,7 +470,7 @@ Hibernate:
 ]]></system-out>
   </testcase>
   <testcase name="shouldSearchTechniciansByEmail" classname="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.012">
-    <system-out><![CDATA[2025-06-23T16:56:41.986-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    <system-out><![CDATA[2025-06-23T17:05:46.783-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -486,7 +486,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-23T16:56:41.988-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.785-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -500,7 +500,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.989-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.786-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -514,7 +514,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.990-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.787-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -528,7 +528,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:41.992-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.789-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -556,8 +556,8 @@ Hibernate:
         first ? rows only
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleEmptySearchTerm" classname="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.011">
-    <system-out><![CDATA[2025-06-23T16:56:42.000-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleEmptySearchTerm" classname="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.01">
+    <system-out><![CDATA[2025-06-23T17:05:46.796-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -573,7 +573,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-23T16:56:42.001-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.797-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -587,7 +587,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.003-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.798-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -601,7 +601,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.003-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.798-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -615,7 +615,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.005-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.800-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -643,8 +643,8 @@ Hibernate:
         first ? rows only
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleNullSearchTerm" classname="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.01">
-    <system-out><![CDATA[2025-06-23T16:56:42.011-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleNullSearchTerm" classname="com.localtechsupport.repository.TechnicianRepositoryTest$SearchTests" time="0.011">
+    <system-out><![CDATA[2025-06-23T17:05:46.806-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -660,7 +660,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-23T16:56:42.013-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.807-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -674,7 +674,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.014-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.808-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -688,7 +688,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.015-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.809-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -702,7 +702,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.017-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:46.811-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,

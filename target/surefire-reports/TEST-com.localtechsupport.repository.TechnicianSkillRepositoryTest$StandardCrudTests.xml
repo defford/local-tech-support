@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.128" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.069" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T16-56-29_848-jvmRun1 surefire-20250623165629917_1tmp surefire_0-20250623165629917_2tmp"/>
+    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T17-05-30_331-jvmRun1 surefire-20250623170530409_1tmp surefire_0-20250623170530409_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="*RepositoryTest"/>
@@ -35,7 +35,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -54,7 +54,7 @@
     <property name="user.dir" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="32586"/>
+    <property name="PID" value="54740"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/danielefford/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -67,10 +67,10 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[tech-support-server] "/>
   </properties>
-  <testcase name="shouldSaveNewTechnicianSkillSuccessfully" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.023">
-    <system-out><![CDATA[2025-06-23T16:56:43.792-02:30  INFO 32586 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests]: StandardCrudTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-06-23T16:56:43.801-02:30  INFO 32586 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests
-2025-06-23T16:56:43.823-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldSaveNewTechnicianSkillSuccessfully" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.005">
+    <system-out><![CDATA[2025-06-23T17:05:49.007-02:30  INFO 54740 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests]: StandardCrudTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-23T17:05:49.013-02:30  INFO 54740 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests
+2025-06-23T17:05:49.017-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -84,7 +84,7 @@ Hibernate:
         ts1_0.technician_id 
     from
         technician_skills ts1_0
-2025-06-23T16:56:43.825-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.018-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -98,7 +98,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:43.826-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.019-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -114,8 +114,8 @@ Hibernate:
         (?, ?, default)
 ]]></system-out>
   </testcase>
-  <testcase name="shouldReturnEmptyListWhenNoTechnicianSkillsExist" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.006">
-    <system-out><![CDATA[2025-06-23T16:56:43.833-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldReturnEmptyListWhenNoTechnicianSkillsExist" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.009">
+    <system-out><![CDATA[2025-06-23T17:05:49.027-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -129,7 +129,7 @@ Hibernate:
         ts1_0.technician_id 
     from
         technician_skills ts1_0
-2025-06-23T16:56:43.835-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.029-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -145,8 +145,8 @@ Hibernate:
         technician_skills ts1_0
 ]]></system-out>
   </testcase>
-  <testcase name="shouldUpdateExistingTechnicianSkillSuccessfully" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.018">
-    <system-out><![CDATA[2025-06-23T16:56:43.841-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldUpdateExistingTechnicianSkillSuccessfully" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.004">
+    <system-out><![CDATA[2025-06-23T17:05:49.033-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -160,7 +160,7 @@ Hibernate:
         ts1_0.technician_id 
     from
         technician_skills ts1_0
-2025-06-23T16:56:43.852-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.034-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -174,7 +174,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:43.854-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.035-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -190,8 +190,8 @@ Hibernate:
         (?, ?, default)
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFindAllTechnicianSkills" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.014">
-    <system-out><![CDATA[2025-06-23T16:56:43.860-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldFindAllTechnicianSkills" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.009">
+    <system-out><![CDATA[2025-06-23T17:05:49.039-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -205,7 +205,7 @@ Hibernate:
         ts1_0.technician_id 
     from
         technician_skills ts1_0
-2025-06-23T16:56:43.861-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.040-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -219,7 +219,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:43.862-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.040-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -233,7 +233,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:43.863-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.040-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -247,7 +247,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:43.863-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.041-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -261,7 +261,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:43.863-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.041-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -275,7 +275,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:43.864-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.041-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -289,7 +289,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:43.865-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.042-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -303,7 +303,7 @@ Hibernate:
         ts1_0.technician_id 
     from
         technician_skills ts1_0
-2025-06-23T16:56:43.866-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.043-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -323,7 +323,7 @@ Hibernate:
         technicians t1_0 
     where
         t1_0.id=?
-2025-06-23T16:56:43.867-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.044-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -345,8 +345,8 @@ Hibernate:
         t1_0.id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldCountAllTechnicianSkillsCorrectly" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.014">
-    <system-out><![CDATA[2025-06-23T16:56:43.875-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldCountAllTechnicianSkillsCorrectly" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.007">
+    <system-out><![CDATA[2025-06-23T17:05:49.049-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -360,7 +360,7 @@ Hibernate:
         ts1_0.technician_id 
     from
         technician_skills ts1_0
-2025-06-23T16:56:43.877-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.050-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -374,7 +374,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:43.879-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.051-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -388,7 +388,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:43.879-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.051-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -402,7 +402,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:43.880-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.051-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -416,7 +416,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:43.880-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.051-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -430,7 +430,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:43.881-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.051-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -444,7 +444,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:43.883-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.052-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(*) 
     from
@@ -456,8 +456,8 @@ Hibernate:
         technician_skills ts1_0
 ]]></system-out>
   </testcase>
-  <testcase name="shouldReturnEmptyWhenFindingByNonExistingId" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.01">
-    <system-out><![CDATA[2025-06-23T16:56:43.891-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldReturnEmptyWhenFindingByNonExistingId" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.006">
+    <system-out><![CDATA[2025-06-23T17:05:49.057-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -471,7 +471,7 @@ Hibernate:
         ts1_0.technician_id 
     from
         technician_skills ts1_0
-2025-06-23T16:56:43.893-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.059-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -505,8 +505,8 @@ Hibernate:
         ts1_0.id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFindTechnicianSkillByExistingId" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.01">
-    <system-out><![CDATA[2025-06-23T16:56:43.901-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldFindTechnicianSkillByExistingId" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.006">
+    <system-out><![CDATA[2025-06-23T17:05:49.064-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -520,7 +520,7 @@ Hibernate:
         ts1_0.technician_id 
     from
         technician_skills ts1_0
-2025-06-23T16:56:43.903-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.065-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -534,7 +534,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:43.905-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.065-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -548,7 +548,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:43.906-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.065-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -582,8 +582,8 @@ Hibernate:
         ts1_0.id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldDeleteTechnicianSkillById" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.01">
-    <system-out><![CDATA[2025-06-23T16:56:43.911-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldDeleteTechnicianSkillById" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$StandardCrudTests" time="0.007">
+    <system-out><![CDATA[2025-06-23T17:05:49.070-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -597,7 +597,7 @@ Hibernate:
         ts1_0.technician_id 
     from
         technician_skills ts1_0
-2025-06-23T16:56:43.913-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.071-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -611,7 +611,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:43.914-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.071-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -625,7 +625,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:43.915-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:49.072-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,

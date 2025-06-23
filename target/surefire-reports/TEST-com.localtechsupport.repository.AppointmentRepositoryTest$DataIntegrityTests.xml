@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.046" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.181" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T16-56-29_848-jvmRun1 surefire-20250623165629917_1tmp surefire_0-20250623165629917_2tmp"/>
+    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T17-05-30_331-jvmRun1 surefire-20250623170530409_1tmp surefire_0-20250623170530409_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="*RepositoryTest"/>
@@ -35,7 +35,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -54,7 +54,7 @@
     <property name="user.dir" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="32586"/>
+    <property name="PID" value="54740"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/danielefford/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -67,12 +67,10 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[tech-support-server] "/>
   </properties>
-  <testcase name="shouldHandleNullTicketGracefully" classname="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.005">
-    <system-out><![CDATA[2025-06-23T16:56:46.620-02:30  INFO 32586 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.AppointmentRepositoryTest]: AppointmentRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-06-23T16:56:46.623-02:30  INFO 32586 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.AppointmentRepositoryTest
-2025-06-23T16:56:46.625-02:30  INFO 32586 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests]: DataIntegrityTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-06-23T16:56:46.629-02:30  INFO 32586 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests
-2025-06-23T16:56:46.633-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleNullTicketGracefully" classname="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.009">
+    <system-out><![CDATA[2025-06-23T17:05:52.322-02:30  INFO 54740 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests]: DataIntegrityTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-23T17:05:52.330-02:30  INFO 54740 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests
+2025-06-23T17:05:52.339-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.created_at,
@@ -96,7 +94,7 @@ Hibernate:
         a1_0.updated_at 
     from
         appointments a1_0
-2025-06-23T16:56:46.635-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.343-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.created_at,
@@ -126,8 +124,8 @@ Hibernate:
         a1_0.ticket_id is null
 ]]></system-out>
   </testcase>
-  <testcase name="shouldValidateAppointmentTimeLogic" classname="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.006">
-    <system-out><![CDATA[2025-06-23T16:56:46.638-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldValidateAppointmentTimeLogic" classname="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.012">
+    <system-out><![CDATA[2025-06-23T17:05:52.348-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.created_at,
@@ -151,7 +149,7 @@ Hibernate:
         a1_0.updated_at 
     from
         appointments a1_0
-2025-06-23T16:56:46.639-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.350-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -165,7 +163,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.640-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.350-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -179,7 +177,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:46.640-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.351-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -193,7 +191,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:46.640-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.351-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -207,7 +205,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.640-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.351-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -221,7 +219,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.641-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.352-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         appointments
@@ -235,7 +233,7 @@ Hibernate:
         (created_at, end_time, start_time, status, technician_id, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.641-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.352-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         appointments
@@ -249,7 +247,7 @@ Hibernate:
         (created_at, end_time, start_time, status, technician_id, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.641-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.352-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         appointments
@@ -263,7 +261,7 @@ Hibernate:
         (created_at, end_time, start_time, status, technician_id, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.642-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.356-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         appointments
@@ -279,8 +277,8 @@ Hibernate:
         (?, ?, ?, ?, ?, ?, ?, default)
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleNullTimeParametersGracefully" classname="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.005">
-    <system-out><![CDATA[2025-06-23T16:56:46.645-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleNullTimeParametersGracefully" classname="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.012">
+    <system-out><![CDATA[2025-06-23T17:05:52.362-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.created_at,
@@ -304,7 +302,7 @@ Hibernate:
         a1_0.updated_at 
     from
         appointments a1_0
-2025-06-23T16:56:46.647-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.369-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.created_at,
@@ -334,8 +332,8 @@ Hibernate:
         a1_0.start_time between ? and ?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldMaintainReferentialIntegrityWithTicket" classname="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.007">
-    <system-out><![CDATA[2025-06-23T16:56:46.651-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldMaintainReferentialIntegrityWithTicket" classname="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.014">
+    <system-out><![CDATA[2025-06-23T17:05:52.377-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.created_at,
@@ -359,7 +357,7 @@ Hibernate:
         a1_0.updated_at 
     from
         appointments a1_0
-2025-06-23T16:56:46.652-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.379-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -373,7 +371,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.652-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.379-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -387,7 +385,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:46.652-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.381-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -401,7 +399,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:46.652-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.381-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -415,7 +413,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.652-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.382-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -429,7 +427,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.653-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.382-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         appointments
@@ -443,7 +441,7 @@ Hibernate:
         (created_at, end_time, start_time, status, technician_id, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.653-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.382-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         appointments
@@ -457,7 +455,7 @@ Hibernate:
         (created_at, end_time, start_time, status, technician_id, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.653-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.383-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         appointments
@@ -471,7 +469,7 @@ Hibernate:
         (created_at, end_time, start_time, status, technician_id, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.654-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.385-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.created_at,
@@ -575,8 +573,8 @@ Hibernate:
         a1_0.id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleNullTechnicianGracefully" classname="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.004">
-    <system-out><![CDATA[2025-06-23T16:56:46.658-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleNullTechnicianGracefully" classname="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.009">
+    <system-out><![CDATA[2025-06-23T17:05:52.392-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.created_at,
@@ -600,7 +598,7 @@ Hibernate:
         a1_0.updated_at 
     from
         appointments a1_0
-2025-06-23T16:56:46.660-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.395-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.created_at,
@@ -630,8 +628,8 @@ Hibernate:
         a1_0.technician_id is null
 ]]></system-out>
   </testcase>
-  <testcase name="shouldMaintainReferentialIntegrityWithTechnician" classname="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.007">
-    <system-out><![CDATA[2025-06-23T16:56:46.664-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldMaintainReferentialIntegrityWithTechnician" classname="com.localtechsupport.repository.AppointmentRepositoryTest$DataIntegrityTests" time="0.023">
+    <system-out><![CDATA[2025-06-23T17:05:52.401-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.created_at,
@@ -655,7 +653,7 @@ Hibernate:
         a1_0.updated_at 
     from
         appointments a1_0
-2025-06-23T16:56:46.665-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.402-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -669,7 +667,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.666-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.403-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -683,7 +681,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:46.666-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.403-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -697,7 +695,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:46.666-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.404-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -711,7 +709,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.666-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.405-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -725,7 +723,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.666-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.405-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         appointments
@@ -739,7 +737,7 @@ Hibernate:
         (created_at, end_time, start_time, status, technician_id, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.667-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.406-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         appointments
@@ -753,7 +751,7 @@ Hibernate:
         (created_at, end_time, start_time, status, technician_id, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.667-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.406-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         appointments
@@ -767,7 +765,7 @@ Hibernate:
         (created_at, end_time, start_time, status, technician_id, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.667-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:52.407-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         a1_0.id,
         a1_0.created_at,

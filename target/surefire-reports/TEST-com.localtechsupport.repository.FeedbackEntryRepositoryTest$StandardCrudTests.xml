@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.061" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.121" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T16-56-29_848-jvmRun1 surefire-20250623165629917_1tmp surefire_0-20250623165629917_2tmp"/>
+    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T17-05-30_331-jvmRun1 surefire-20250623170530409_1tmp surefire_0-20250623170530409_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="*RepositoryTest"/>
@@ -35,7 +35,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -54,7 +54,7 @@
     <property name="user.dir" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="32586"/>
+    <property name="PID" value="54740"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/danielefford/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -67,10 +67,10 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[tech-support-server] "/>
   </properties>
-  <testcase name="shouldDeleteFeedbackEntryById" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.007">
-    <system-out><![CDATA[2025-06-23T16:56:47.975-02:30  INFO 32586 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests]: StandardCrudTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-06-23T16:56:47.979-02:30  INFO 32586 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests
-2025-06-23T16:56:47.982-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldDeleteFeedbackEntryById" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.011">
+    <system-out><![CDATA[2025-06-23T17:05:54.603-02:30  INFO 54740 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests]: StandardCrudTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-23T17:05:54.612-02:30  INFO 54740 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests
+2025-06-23T17:05:54.618-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         fe1_0.id,
         fe1_0.comment,
@@ -90,7 +90,7 @@ Hibernate:
         fe1_0.ticket_id 
     from
         feedback_entries fe1_0
-2025-06-23T16:56:47.983-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.619-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -104,7 +104,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.983-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.620-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -118,7 +118,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.983-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.620-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -132,7 +132,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.984-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.620-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -146,7 +146,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.984-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.621-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -160,7 +160,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.984-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.621-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -174,7 +174,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.984-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.621-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -188,7 +188,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.985-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.622-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         fe1_0.id,
         fe1_0.comment,
@@ -274,8 +274,8 @@ Hibernate:
         fe1_0.id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFindFeedbackEntryByExistingId" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.006">
-    <system-out><![CDATA[2025-06-23T16:56:47.989-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldFindFeedbackEntryByExistingId" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.011">
+    <system-out><![CDATA[2025-06-23T17:05:54.629-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         fe1_0.id,
         fe1_0.comment,
@@ -295,7 +295,7 @@ Hibernate:
         fe1_0.ticket_id 
     from
         feedback_entries fe1_0
-2025-06-23T16:56:47.990-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.630-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -309,7 +309,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.991-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.631-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -323,7 +323,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.991-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.632-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -337,7 +337,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.991-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.632-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -351,7 +351,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.991-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.633-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -365,7 +365,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.992-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.634-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -379,7 +379,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.992-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.635-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -393,7 +393,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.992-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.636-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         fe1_0.id,
         fe1_0.comment,
@@ -479,8 +479,8 @@ Hibernate:
         fe1_0.id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldSaveNewFeedbackEntrySuccessfully" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.006">
-    <system-out><![CDATA[2025-06-23T16:56:47.997-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldSaveNewFeedbackEntrySuccessfully" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.017">
+    <system-out><![CDATA[2025-06-23T17:05:54.642-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         fe1_0.id,
         fe1_0.comment,
@@ -500,7 +500,7 @@ Hibernate:
         fe1_0.ticket_id 
     from
         feedback_entries fe1_0
-2025-06-23T16:56:47.998-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.643-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -514,7 +514,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.999-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.644-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -528,7 +528,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:47.999-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.644-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -544,8 +544,8 @@ Hibernate:
         (?, ?, ?, ?, ?, default)
 ]]></system-out>
   </testcase>
-  <testcase name="shouldReturnEmptyWhenFindingByNonExistingId" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.004">
-    <system-out><![CDATA[2025-06-23T16:56:48.004-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldReturnEmptyWhenFindingByNonExistingId" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.008">
+    <system-out><![CDATA[2025-06-23T17:05:54.661-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         fe1_0.id,
         fe1_0.comment,
@@ -565,7 +565,7 @@ Hibernate:
         fe1_0.ticket_id 
     from
         feedback_entries fe1_0
-2025-06-23T16:56:48.005-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.662-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         fe1_0.id,
         fe1_0.comment,
@@ -651,8 +651,8 @@ Hibernate:
         fe1_0.id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFindAllFeedbackEntries" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.011">
-    <system-out><![CDATA[2025-06-23T16:56:48.008-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldFindAllFeedbackEntries" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.016">
+    <system-out><![CDATA[2025-06-23T17:05:54.668-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         fe1_0.id,
         fe1_0.comment,
@@ -672,7 +672,7 @@ Hibernate:
         fe1_0.ticket_id 
     from
         feedback_entries fe1_0
-2025-06-23T16:56:48.009-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.670-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -686,7 +686,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.010-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.671-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -700,7 +700,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.010-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.672-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -714,7 +714,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.010-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.673-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -728,7 +728,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.010-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.673-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -742,7 +742,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.010-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.674-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -756,7 +756,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.011-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.675-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -770,7 +770,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.012-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.677-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         fe1_0.id,
         fe1_0.comment,
@@ -790,7 +790,7 @@ Hibernate:
         fe1_0.ticket_id 
     from
         feedback_entries fe1_0
-2025-06-23T16:56:48.013-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.677-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         at1_0.id,
@@ -856,7 +856,7 @@ Hibernate:
             on c1_0.id=t1_0.client_id 
     where
         t1_0.id=?
-2025-06-23T16:56:48.014-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.679-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         at1_0.id,
@@ -924,8 +924,8 @@ Hibernate:
         t1_0.id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldUpdateExistingFeedbackEntrySuccessfully" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.009">
-    <system-out><![CDATA[2025-06-23T16:56:48.020-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldUpdateExistingFeedbackEntrySuccessfully" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.016">
+    <system-out><![CDATA[2025-06-23T17:05:54.685-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         fe1_0.id,
         fe1_0.comment,
@@ -945,7 +945,7 @@ Hibernate:
         fe1_0.ticket_id 
     from
         feedback_entries fe1_0
-2025-06-23T16:56:48.021-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.686-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -959,7 +959,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.022-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.687-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -973,7 +973,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.022-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.688-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -987,7 +987,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.022-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.689-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -1001,7 +1001,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.022-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.690-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -1015,7 +1015,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.023-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.690-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -1029,7 +1029,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.023-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.691-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -1043,7 +1043,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.024-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.694-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         fe1_0.id,
         fe1_0.comment,
@@ -1139,7 +1139,7 @@ Hibernate:
             on c1_0.id=t1_0.client_id 
     where
         fe1_0.id=?
-2025-06-23T16:56:48.025-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.696-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         h1_0.ticket_id,
         h1_0.id,
@@ -1165,7 +1165,7 @@ Hibernate:
         ticket_history h1_0 
     where
         h1_0.ticket_id=?
-2025-06-23T16:56:48.025-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.696-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         fe1_0.ticket_id,
         fe1_0.id,
@@ -1191,8 +1191,8 @@ Hibernate:
         fe1_0.ticket_id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldCountAllFeedbackEntriesCorrectly" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.006">
-    <system-out><![CDATA[2025-06-23T16:56:48.029-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldCountAllFeedbackEntriesCorrectly" classname="com.localtechsupport.repository.FeedbackEntryRepositoryTest$StandardCrudTests" time="0.023">
+    <system-out><![CDATA[2025-06-23T17:05:54.704-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         fe1_0.id,
         fe1_0.comment,
@@ -1212,7 +1212,7 @@ Hibernate:
         fe1_0.ticket_id 
     from
         feedback_entries fe1_0
-2025-06-23T16:56:48.030-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.705-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1226,7 +1226,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.031-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.707-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1240,7 +1240,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.031-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.708-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -1254,7 +1254,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.032-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.709-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -1268,7 +1268,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.032-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.710-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -1282,7 +1282,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.032-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.712-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -1296,7 +1296,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.032-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.713-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         feedback_entries
@@ -1310,7 +1310,7 @@ Hibernate:
         (comment, created_by, rating, submitted_at, ticket_id, id) 
     values
         (?, ?, ?, ?, ?, default)
-2025-06-23T16:56:48.033-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:54.720-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(*) 
     from

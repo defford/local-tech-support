@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TicketHistoryRepositoryTest$DataIntegrityTests" time="0.046" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TicketHistoryRepositoryTest$DataIntegrityTests" time="0.043" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T16-56-29_848-jvmRun1 surefire-20250623165629917_1tmp surefire_0-20250623165629917_2tmp"/>
+    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T17-05-30_331-jvmRun1 surefire-20250623170530409_1tmp surefire_0-20250623170530409_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="*RepositoryTest"/>
@@ -35,7 +35,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -54,7 +54,7 @@
     <property name="user.dir" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="32586"/>
+    <property name="PID" value="54740"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/danielefford/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -67,12 +67,12 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[tech-support-server] "/>
   </properties>
-  <testcase name="shouldNotAllowNullDescription" classname="com.localtechsupport.repository.TicketHistoryRepositoryTest$DataIntegrityTests" time="0.014">
-    <system-out><![CDATA[2025-06-23T16:56:42.280-02:30  INFO 32586 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TicketHistoryRepositoryTest]: TicketHistoryRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-06-23T16:56:42.285-02:30  INFO 32586 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TicketHistoryRepositoryTest
-2025-06-23T16:56:42.287-02:30  INFO 32586 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TicketHistoryRepositoryTest$DataIntegrityTests]: DataIntegrityTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-06-23T16:56:42.292-02:30  INFO 32586 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TicketHistoryRepositoryTest$DataIntegrityTests
-2025-06-23T16:56:42.297-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldNotAllowNullDescription" classname="com.localtechsupport.repository.TicketHistoryRepositoryTest$DataIntegrityTests" time="0.016">
+    <system-out><![CDATA[2025-06-23T17:05:47.082-02:30  INFO 54740 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TicketHistoryRepositoryTest]: TicketHistoryRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-23T17:05:47.087-02:30  INFO 54740 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TicketHistoryRepositoryTest
+2025-06-23T17:05:47.089-02:30  INFO 54740 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TicketHistoryRepositoryTest$DataIntegrityTests]: DataIntegrityTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-23T17:05:47.094-02:30  INFO 54740 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TicketHistoryRepositoryTest$DataIntegrityTests
+2025-06-23T17:05:47.100-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         th1_0.id,
         th1_0.created_at,
@@ -94,7 +94,7 @@ Hibernate:
         th1_0.updated_at 
     from
         ticket_history th1_0
-2025-06-23T16:56:42.299-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.102-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -108,7 +108,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.300-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.103-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -122,7 +122,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.300-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.103-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -136,7 +136,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.301-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.104-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -150,7 +150,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.302-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.105-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         ticket_history
@@ -164,7 +164,7 @@ Hibernate:
         (created_at, created_by, description, status, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.303-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.106-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         ticket_history
@@ -178,7 +178,7 @@ Hibernate:
         (created_at, created_by, description, status, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.303-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.106-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         ticket_history
@@ -192,7 +192,7 @@ Hibernate:
         (created_at, created_by, description, status, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.305-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.108-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         ticket_history
@@ -206,13 +206,13 @@ Hibernate:
         (created_at, created_by, description, status, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.305-02:30  WARN 32586 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
-2025-06-23T16:56:42.305-02:30 ERROR 32586 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "DESCRIPTION"; SQL statement:
+2025-06-23T17:05:47.108-02:30  WARN 54740 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
+2025-06-23T17:05:47.108-02:30 ERROR 54740 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "DESCRIPTION"; SQL statement:
 insert into ticket_history (created_at,created_by,description,status,ticket_id,updated_at,id) values (?,?,?,?,?,?,default) [23502-232]
 ]]></system-out>
   </testcase>
-  <testcase name="shouldNotAllowNullStatus" classname="com.localtechsupport.repository.TicketHistoryRepositoryTest$DataIntegrityTests" time="0.015">
-    <system-out><![CDATA[2025-06-23T16:56:42.311-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldNotAllowNullStatus" classname="com.localtechsupport.repository.TicketHistoryRepositoryTest$DataIntegrityTests" time="0.011">
+    <system-out><![CDATA[2025-06-23T17:05:47.114-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         th1_0.id,
         th1_0.created_at,
@@ -234,7 +234,7 @@ Hibernate:
         th1_0.updated_at 
     from
         ticket_history th1_0
-2025-06-23T16:56:42.313-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.116-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -248,7 +248,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.314-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.117-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -262,7 +262,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.315-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.117-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -276,7 +276,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.317-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.118-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -290,7 +290,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.318-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.119-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         ticket_history
@@ -304,7 +304,7 @@ Hibernate:
         (created_at, created_by, description, status, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.319-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.120-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         ticket_history
@@ -318,7 +318,7 @@ Hibernate:
         (created_at, created_by, description, status, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.320-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.120-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         ticket_history
@@ -332,7 +332,7 @@ Hibernate:
         (created_at, created_by, description, status, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.322-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.121-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         ticket_history
@@ -346,13 +346,13 @@ Hibernate:
         (created_at, created_by, description, status, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.322-02:30  WARN 32586 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
-2025-06-23T16:56:42.322-02:30 ERROR 32586 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "STATUS"; SQL statement:
+2025-06-23T17:05:47.122-02:30  WARN 54740 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
+2025-06-23T17:05:47.122-02:30 ERROR 54740 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "STATUS"; SQL statement:
 insert into ticket_history (created_at,created_by,description,status,ticket_id,updated_at,id) values (?,?,?,?,?,?,default) [23502-232]
 ]]></system-out>
   </testcase>
-  <testcase name="shouldNotAllowNullTicket" classname="com.localtechsupport.repository.TicketHistoryRepositoryTest$DataIntegrityTests" time="0.006">
-    <system-out><![CDATA[2025-06-23T16:56:42.327-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldNotAllowNullTicket" classname="com.localtechsupport.repository.TicketHistoryRepositoryTest$DataIntegrityTests" time="0.007">
+    <system-out><![CDATA[2025-06-23T17:05:47.127-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         th1_0.id,
         th1_0.created_at,
@@ -374,7 +374,7 @@ Hibernate:
         th1_0.updated_at 
     from
         ticket_history th1_0
-2025-06-23T16:56:42.329-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.129-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         ticket_history
@@ -388,8 +388,8 @@ Hibernate:
         (created_at, created_by, description, status, ticket_id, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:42.330-02:30  WARN 32586 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
-2025-06-23T16:56:42.330-02:30 ERROR 32586 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "TICKET_ID"; SQL statement:
+2025-06-23T17:05:47.129-02:30  WARN 54740 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
+2025-06-23T17:05:47.129-02:30 ERROR 54740 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "TICKET_ID"; SQL statement:
 insert into ticket_history (created_at,created_by,description,status,ticket_id,updated_at,id) values (?,?,?,?,?,?,default) [23502-232]
 ]]></system-out>
   </testcase>

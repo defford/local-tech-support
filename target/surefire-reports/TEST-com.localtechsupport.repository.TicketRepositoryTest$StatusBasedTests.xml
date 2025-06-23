@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.099" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.104" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T16-56-29_848-jvmRun1 surefire-20250623165629917_1tmp surefire_0-20250623165629917_2tmp"/>
+    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T17-05-30_331-jvmRun1 surefire-20250623170530409_1tmp surefire_0-20250623170530409_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="*RepositoryTest"/>
@@ -35,7 +35,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -54,7 +54,7 @@
     <property name="user.dir" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="32586"/>
+    <property name="PID" value="54740"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/danielefford/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -67,10 +67,10 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[tech-support-server] "/>
   </properties>
-  <testcase name="shouldCountTicketsByOpenStatus" classname="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.014">
-    <system-out><![CDATA[2025-06-23T16:56:45.963-02:30  INFO 32586 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests]: StatusBasedTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-06-23T16:56:45.969-02:30  INFO 32586 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests
-2025-06-23T16:56:45.972-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldCountTicketsByOpenStatus" classname="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.012">
+    <system-out><![CDATA[2025-06-23T17:05:51.093-02:30  INFO 54740 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests]: StatusBasedTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-23T17:05:51.108-02:30  INFO 54740 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests
+2025-06-23T17:05:51.113-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         ticket_history
@@ -78,7 +78,7 @@ Hibernate:
     DELETE 
     FROM
         ticket_history
-2025-06-23T16:56:45.972-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.113-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         feedback_entries
@@ -86,7 +86,7 @@ Hibernate:
     DELETE 
     FROM
         feedback_entries
-2025-06-23T16:56:45.972-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.113-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         appointments
@@ -94,7 +94,7 @@ Hibernate:
     DELETE 
     FROM
         appointments
-2025-06-23T16:56:45.973-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.114-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         tickets
@@ -102,15 +102,15 @@ Hibernate:
     DELETE 
     FROM
         tickets
-2025-06-23T16:56:45.973-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    DELETE 
-    FROM
-        technician_skills
-Hibernate: 
+2025-06-23T17:05:51.114-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technician_skills
-2025-06-23T16:56:45.973-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+Hibernate: 
+    DELETE 
+    FROM
+        technician_skills
+2025-06-23T17:05:51.114-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technicians
@@ -118,7 +118,7 @@ Hibernate:
     DELETE 
     FROM
         technicians
-2025-06-23T16:56:45.973-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.114-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         clients
@@ -126,35 +126,35 @@ Hibernate:
     DELETE 
     FROM
         clients
-2025-06-23T16:56:45.973-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.114-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.973-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.114-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.974-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.114-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.974-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.115-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.974-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.115-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.974-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.115-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.974-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.115-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.976-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.116-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -168,7 +168,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:45.977-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.117-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -182,7 +182,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:45.977-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.117-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -196,7 +196,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:45.978-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.118-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -210,7 +210,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:45.978-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.118-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -224,7 +224,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:45.979-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.118-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -238,7 +238,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:45.980-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.119-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -252,7 +252,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:45.982-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.121-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(t1_0.id) 
     from
@@ -268,8 +268,8 @@ Hibernate:
         t1_0.status=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFindTicketsByStatusWithoutPagination" classname="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.018">
-    <system-out><![CDATA[2025-06-23T16:56:45.987-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldFindTicketsByStatusWithoutPagination" classname="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.015">
+    <system-out><![CDATA[2025-06-23T17:05:51.126-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         ticket_history
@@ -277,7 +277,7 @@ Hibernate:
     DELETE 
     FROM
         ticket_history
-2025-06-23T16:56:45.987-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.126-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         feedback_entries
@@ -285,7 +285,7 @@ Hibernate:
     DELETE 
     FROM
         feedback_entries
-2025-06-23T16:56:45.988-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.126-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         appointments
@@ -293,7 +293,7 @@ Hibernate:
     DELETE 
     FROM
         appointments
-2025-06-23T16:56:45.988-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.126-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         tickets
@@ -301,15 +301,15 @@ Hibernate:
     DELETE 
     FROM
         tickets
-2025-06-23T16:56:45.988-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    DELETE 
-    FROM
-        technician_skills
-Hibernate: 
+2025-06-23T17:05:51.126-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technician_skills
-2025-06-23T16:56:45.989-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+Hibernate: 
+    DELETE 
+    FROM
+        technician_skills
+2025-06-23T17:05:51.126-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technicians
@@ -317,7 +317,7 @@ Hibernate:
     DELETE 
     FROM
         technicians
-2025-06-23T16:56:45.989-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.126-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         clients
@@ -325,35 +325,35 @@ Hibernate:
     DELETE 
     FROM
         clients
-2025-06-23T16:56:45.989-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.126-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.989-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.127-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.989-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.127-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.989-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.127-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.989-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.127-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.989-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.127-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.990-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.127-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:45.990-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.128-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -367,7 +367,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:45.992-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.128-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -381,7 +381,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:45.992-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.129-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -395,7 +395,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:45.992-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.129-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -409,7 +409,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:45.993-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.130-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -423,7 +423,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:45.994-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.130-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -437,7 +437,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:45.994-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.130-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -451,7 +451,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:45.996-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.132-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.technician_id,
@@ -479,7 +479,7 @@ Hibernate:
         tickets t1_0 
     where
         t1_0.status=?
-2025-06-23T16:56:45.997-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.132-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -499,7 +499,7 @@ Hibernate:
         technicians t1_0 
     where
         t1_0.id=?
-2025-06-23T16:56:45.998-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.133-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -531,7 +531,7 @@ Hibernate:
         clients c1_0 
     where
         c1_0.id=?
-2025-06-23T16:56:46.000-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.135-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.technician_id,
@@ -559,7 +559,7 @@ Hibernate:
         tickets t1_0 
     where
         t1_0.status=?
-2025-06-23T16:56:46.001-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.136-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -579,7 +579,7 @@ Hibernate:
         technicians t1_0 
     where
         t1_0.id=?
-2025-06-23T16:56:46.001-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.136-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -613,8 +613,8 @@ Hibernate:
         c1_0.id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldReturnZeroCountForStatusWithNoTickets" classname="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.007">
-    <system-out><![CDATA[2025-06-23T16:56:46.005-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldReturnZeroCountForStatusWithNoTickets" classname="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.01">
+    <system-out><![CDATA[2025-06-23T17:05:51.147-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         ticket_history
@@ -622,7 +622,7 @@ Hibernate:
     DELETE 
     FROM
         ticket_history
-2025-06-23T16:56:46.006-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.148-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         feedback_entries
@@ -630,7 +630,7 @@ Hibernate:
     DELETE 
     FROM
         feedback_entries
-2025-06-23T16:56:46.006-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.148-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         appointments
@@ -638,7 +638,7 @@ Hibernate:
     DELETE 
     FROM
         appointments
-2025-06-23T16:56:46.006-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.148-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         tickets
@@ -646,7 +646,7 @@ Hibernate:
     DELETE 
     FROM
         tickets
-2025-06-23T16:56:46.006-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.148-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technician_skills
@@ -654,7 +654,7 @@ Hibernate:
     DELETE 
     FROM
         technician_skills
-2025-06-23T16:56:46.006-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.148-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technicians
@@ -662,7 +662,7 @@ Hibernate:
     DELETE 
     FROM
         technicians
-2025-06-23T16:56:46.007-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.149-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         clients
@@ -670,35 +670,35 @@ Hibernate:
     DELETE 
     FROM
         clients
-2025-06-23T16:56:46.007-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.149-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.007-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.149-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.007-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.149-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.007-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.150-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.007-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.150-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.007-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.150-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.007-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.150-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.009-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.151-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(t1_0.id) 
     from
@@ -714,8 +714,8 @@ Hibernate:
         t1_0.status=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFindTicketsByOpenStatus" classname="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.014">
-    <system-out><![CDATA[2025-06-23T16:56:46.014-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldFindTicketsByOpenStatus" classname="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.011">
+    <system-out><![CDATA[2025-06-23T17:05:51.156-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         ticket_history
@@ -723,7 +723,7 @@ Hibernate:
     DELETE 
     FROM
         ticket_history
-2025-06-23T16:56:46.014-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.156-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         feedback_entries
@@ -731,7 +731,7 @@ Hibernate:
     DELETE 
     FROM
         feedback_entries
-2025-06-23T16:56:46.014-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.156-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         appointments
@@ -739,7 +739,7 @@ Hibernate:
     DELETE 
     FROM
         appointments
-2025-06-23T16:56:46.014-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.156-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         tickets
@@ -747,15 +747,15 @@ Hibernate:
     DELETE 
     FROM
         tickets
-2025-06-23T16:56:46.014-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    DELETE 
-    FROM
-        technician_skills
-Hibernate: 
+2025-06-23T17:05:51.156-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technician_skills
-2025-06-23T16:56:46.014-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+Hibernate: 
+    DELETE 
+    FROM
+        technician_skills
+2025-06-23T17:05:51.156-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technicians
@@ -763,7 +763,7 @@ Hibernate:
     DELETE 
     FROM
         technicians
-2025-06-23T16:56:46.014-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.156-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         clients
@@ -771,35 +771,35 @@ Hibernate:
     DELETE 
     FROM
         clients
-2025-06-23T16:56:46.015-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.156-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.015-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.157-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.015-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.157-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.015-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.157-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.015-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.157-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.015-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.157-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.015-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.157-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.016-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.158-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -813,7 +813,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.017-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.159-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -827,7 +827,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.017-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.159-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -841,7 +841,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:46.018-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.159-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -855,7 +855,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:46.018-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.159-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -869,7 +869,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.018-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.160-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -883,7 +883,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.019-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.160-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -897,7 +897,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.021-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.162-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.technician_id,
@@ -929,7 +929,7 @@ Hibernate:
         t1_0.status=? 
     fetch
         first ? rows only
-2025-06-23T16:56:46.022-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.162-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -949,7 +949,7 @@ Hibernate:
         technicians t1_0 
     where
         t1_0.id=?
-2025-06-23T16:56:46.023-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.162-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -983,8 +983,8 @@ Hibernate:
         c1_0.id=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldReturnEmptyPageWhenNoTicketsMatchStatus" classname="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.01">
-    <system-out><![CDATA[2025-06-23T16:56:46.030-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldReturnEmptyPageWhenNoTicketsMatchStatus" classname="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.005">
+    <system-out><![CDATA[2025-06-23T17:05:51.167-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         ticket_history
@@ -992,7 +992,7 @@ Hibernate:
     DELETE 
     FROM
         ticket_history
-2025-06-23T16:56:46.031-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.167-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         feedback_entries
@@ -1000,7 +1000,7 @@ Hibernate:
     DELETE 
     FROM
         feedback_entries
-2025-06-23T16:56:46.031-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.167-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         appointments
@@ -1008,7 +1008,7 @@ Hibernate:
     DELETE 
     FROM
         appointments
-2025-06-23T16:56:46.031-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.167-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         tickets
@@ -1016,7 +1016,7 @@ Hibernate:
     DELETE 
     FROM
         tickets
-2025-06-23T16:56:46.031-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.167-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technician_skills
@@ -1024,7 +1024,7 @@ Hibernate:
     DELETE 
     FROM
         technician_skills
-2025-06-23T16:56:46.031-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.168-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technicians
@@ -1032,7 +1032,7 @@ Hibernate:
     DELETE 
     FROM
         technicians
-2025-06-23T16:56:46.031-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.168-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         clients
@@ -1040,35 +1040,35 @@ Hibernate:
     DELETE 
     FROM
         clients
-2025-06-23T16:56:46.032-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.168-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.032-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.168-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.032-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.168-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.032-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.168-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.032-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.168-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.032-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.168-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.033-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.168-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.035-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.169-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.technician_id,
@@ -1102,8 +1102,8 @@ Hibernate:
         first ? rows only
 ]]></system-out>
   </testcase>
-  <testcase name="shouldFindTicketsByClosedStatus" classname="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.012">
-    <system-out><![CDATA[2025-06-23T16:56:46.039-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldFindTicketsByClosedStatus" classname="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.014">
+    <system-out><![CDATA[2025-06-23T17:05:51.174-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         ticket_history
@@ -1111,7 +1111,7 @@ Hibernate:
     DELETE 
     FROM
         ticket_history
-2025-06-23T16:56:46.040-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.175-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         feedback_entries
@@ -1119,7 +1119,7 @@ Hibernate:
     DELETE 
     FROM
         feedback_entries
-2025-06-23T16:56:46.040-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.175-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         appointments
@@ -1127,7 +1127,7 @@ Hibernate:
     DELETE 
     FROM
         appointments
-2025-06-23T16:56:46.040-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.175-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         tickets
@@ -1135,15 +1135,15 @@ Hibernate:
     DELETE 
     FROM
         tickets
-2025-06-23T16:56:46.040-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    DELETE 
-    FROM
-        technician_skills
-Hibernate: 
+2025-06-23T17:05:51.175-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technician_skills
-2025-06-23T16:56:46.040-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+Hibernate: 
+    DELETE 
+    FROM
+        technician_skills
+2025-06-23T17:05:51.175-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technicians
@@ -1151,7 +1151,7 @@ Hibernate:
     DELETE 
     FROM
         technicians
-2025-06-23T16:56:46.040-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.175-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         clients
@@ -1159,35 +1159,35 @@ Hibernate:
     DELETE 
     FROM
         clients
-2025-06-23T16:56:46.040-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.175-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.041-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.176-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.041-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.176-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.041-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.176-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.041-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.176-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.041-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.176-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.041-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.176-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.042-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.177-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1201,7 +1201,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.043-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.178-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1215,7 +1215,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.043-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.178-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1229,7 +1229,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:46.043-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.179-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1243,7 +1243,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:46.043-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.179-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -1257,7 +1257,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.044-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.180-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -1271,7 +1271,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.044-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.181-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -1285,7 +1285,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.046-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.182-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.technician_id,
@@ -1317,7 +1317,7 @@ Hibernate:
         t1_0.status=? 
     fetch
         first ? rows only
-2025-06-23T16:56:46.047-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.183-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -1337,7 +1337,7 @@ Hibernate:
         technicians t1_0 
     where
         t1_0.id=?
-2025-06-23T16:56:46.048-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.183-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -1372,7 +1372,7 @@ Hibernate:
 ]]></system-out>
   </testcase>
   <testcase name="shouldCountTicketsByClosedStatus" classname="com.localtechsupport.repository.TicketRepositoryTest$StatusBasedTests" time="0.008">
-    <system-out><![CDATA[2025-06-23T16:56:46.052-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    <system-out><![CDATA[2025-06-23T17:05:51.189-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         ticket_history
@@ -1380,7 +1380,7 @@ Hibernate:
     DELETE 
     FROM
         ticket_history
-2025-06-23T16:56:46.053-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.189-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         feedback_entries
@@ -1388,7 +1388,7 @@ Hibernate:
     DELETE 
     FROM
         feedback_entries
-2025-06-23T16:56:46.053-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.189-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         appointments
@@ -1396,7 +1396,7 @@ Hibernate:
     DELETE 
     FROM
         appointments
-2025-06-23T16:56:46.053-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.189-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         tickets
@@ -1404,15 +1404,15 @@ Hibernate:
     DELETE 
     FROM
         tickets
-2025-06-23T16:56:46.053-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    DELETE 
-    FROM
-        technician_skills
-Hibernate: 
+2025-06-23T17:05:51.189-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technician_skills
-2025-06-23T16:56:46.053-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+Hibernate: 
+    DELETE 
+    FROM
+        technician_skills
+2025-06-23T17:05:51.189-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         technicians
@@ -1420,7 +1420,7 @@ Hibernate:
     DELETE 
     FROM
         technicians
-2025-06-23T16:56:46.053-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.189-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     DELETE 
     FROM
         clients
@@ -1428,35 +1428,35 @@ Hibernate:
     DELETE 
     FROM
         clients
-2025-06-23T16:56:46.053-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.189-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE ticket_history ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.053-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.190-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE feedback_entries ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.053-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.190-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE appointments ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.053-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.190-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE tickets ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.053-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.190-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technician_skills ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.053-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.190-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE technicians ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.054-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.190-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
 Hibernate: 
     ALTER TABLE clients ALTER COLUMN id RESTART WITH 1
-2025-06-23T16:56:46.054-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.191-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1470,7 +1470,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.055-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.191-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1484,7 +1484,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.055-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.192-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1498,7 +1498,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:46.055-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.192-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1512,7 +1512,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:46.055-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.192-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -1526,7 +1526,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.056-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.193-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -1540,7 +1540,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.056-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.193-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         tickets
@@ -1554,7 +1554,7 @@ Hibernate:
         (technician_id, client_id, created_at, description, due_at, service_type, status, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.057-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.194-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(t1_0.id) 
     from

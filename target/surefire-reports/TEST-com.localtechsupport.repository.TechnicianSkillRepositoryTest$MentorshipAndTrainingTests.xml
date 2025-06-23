@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests" time="0.104" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests" time="0.088" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T16-56-29_848-jvmRun1 surefire-20250623165629917_1tmp surefire_0-20250623165629917_2tmp"/>
+    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T17-05-30_331-jvmRun1 surefire-20250623170530409_1tmp surefire_0-20250623170530409_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="*RepositoryTest"/>
@@ -35,7 +35,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -54,7 +54,7 @@
     <property name="user.dir" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="32586"/>
+    <property name="PID" value="54740"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/danielefford/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -67,10 +67,10 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[tech-support-server] "/>
   </properties>
-  <testcase name="shouldFindPotentialMentorsBySkill" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests" time="0.017">
-    <system-out><![CDATA[2025-06-23T16:56:42.840-02:30  INFO 32586 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests]: MentorshipAndTrainingTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-06-23T16:56:42.845-02:30  INFO 32586 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests
-2025-06-23T16:56:42.850-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldFindPotentialMentorsBySkill" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests" time="0.012">
+    <system-out><![CDATA[2025-06-23T17:05:47.732-02:30  INFO 54740 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests]: MentorshipAndTrainingTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-23T17:05:47.737-02:30  INFO 54740 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests
+2025-06-23T17:05:47.740-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -84,7 +84,7 @@ Hibernate:
         ts1_0.technician_id 
     from
         technician_skills ts1_0
-2025-06-23T16:56:42.851-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.742-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -98,7 +98,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.853-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.743-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -112,7 +112,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.853-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.743-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -126,7 +126,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.854-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.744-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -140,7 +140,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:42.854-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.744-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -154,7 +154,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:42.855-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.744-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -168,7 +168,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:42.860-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.748-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -222,8 +222,8 @@ Hibernate:
             and t2_0.status='ACTIVE')
 ]]></system-out>
   </testcase>
-  <testcase name="shouldOrderBestQualifiedTechniciansByWorkload" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests" time="0.014">
-    <system-out><![CDATA[2025-06-23T16:56:42.867-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldOrderBestQualifiedTechniciansByWorkload" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests" time="0.011">
+    <system-out><![CDATA[2025-06-23T17:05:47.754-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -237,7 +237,7 @@ Hibernate:
         ts1_0.technician_id 
     from
         technician_skills ts1_0
-2025-06-23T16:56:42.869-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.755-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -251,7 +251,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.869-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.755-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -265,7 +265,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.870-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.755-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -279,7 +279,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.870-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.756-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -293,7 +293,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:42.871-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.756-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -307,7 +307,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:42.871-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.756-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -321,7 +321,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:42.874-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.760-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -366,7 +366,7 @@ Hibernate:
 ]]></system-out>
   </testcase>
   <testcase name="shouldFindBestQualifiedTechnicians" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests" time="0.011">
-    <system-out><![CDATA[2025-06-23T16:56:42.882-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    <system-out><![CDATA[2025-06-23T17:05:47.766-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -380,7 +380,7 @@ Hibernate:
         ts1_0.technician_id 
     from
         technician_skills ts1_0
-2025-06-23T16:56:42.884-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.768-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -394,7 +394,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.884-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.768-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -408,7 +408,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.885-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.769-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -422,7 +422,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.885-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.769-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -436,7 +436,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:42.885-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.769-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -450,7 +450,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:42.886-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.769-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -464,7 +464,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:42.887-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.771-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -506,589 +506,7 @@ Hibernate:
             tickets at1_0 
         where
             t1_0.id=at1_0.technician_id)
-2025-06-23T16:56:42.889-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status 
-    from
-        technician_skills ts1_0 
-    join
-        technicians t1_0 
-            on t1_0.id=ts1_0.technician_id 
-    where
-        ts1_0.service_type=? 
-        and t1_0.status='ACTIVE' 
-    order by
-        (select
-            count(*) 
-        from
-            tickets at1_0 
-        where
-            t1_0.id=at1_0.technician_id)
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status 
-    from
-        technician_skills ts1_0 
-    join
-        technicians t1_0 
-            on t1_0.id=ts1_0.technician_id 
-    where
-        ts1_0.service_type=? 
-        and t1_0.status='ACTIVE' 
-    order by
-        (select
-            count(*) 
-        from
-            tickets at1_0 
-        where
-            t1_0.id=at1_0.technician_id)
-]]></system-out>
-  </testcase>
-  <testcase name="shouldReturnEmptyWhenNoMentorsAvailable" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests" time="0.017">
-    <system-out><![CDATA[2025-06-23T16:56:42.894-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    select
-        ts1_0.id,
-        ts1_0.service_type,
-        ts1_0.technician_id 
-    from
-        technician_skills ts1_0
-Hibernate: 
-    select
-        ts1_0.id,
-        ts1_0.service_type,
-        ts1_0.technician_id 
-    from
-        technician_skills ts1_0
-2025-06-23T16:56:42.896-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technicians
-        (email, full_name, status, id) 
-    values
-        (?, ?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technicians
-        (email, full_name, status, id) 
-    values
-        (?, ?, ?, default)
-2025-06-23T16:56:42.897-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technicians
-        (email, full_name, status, id) 
-    values
-        (?, ?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technicians
-        (email, full_name, status, id) 
-    values
-        (?, ?, ?, default)
-2025-06-23T16:56:42.898-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technicians
-        (email, full_name, status, id) 
-    values
-        (?, ?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technicians
-        (email, full_name, status, id) 
-    values
-        (?, ?, ?, default)
-2025-06-23T16:56:42.898-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-2025-06-23T16:56:42.898-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-2025-06-23T16:56:42.899-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-2025-06-23T16:56:42.900-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    select
-        ts1_0.id,
-        ts1_0.service_type,
-        ts1_0.technician_id 
-    from
-        technician_skills ts1_0
-Hibernate: 
-    select
-        ts1_0.id,
-        ts1_0.service_type,
-        ts1_0.technician_id 
-    from
-        technician_skills ts1_0
-2025-06-23T16:56:42.901-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status 
-    from
-        technicians t1_0 
-    where
-        t1_0.id=?
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status 
-    from
-        technicians t1_0 
-    where
-        t1_0.id=?
-2025-06-23T16:56:42.901-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status 
-    from
-        technicians t1_0 
-    where
-        t1_0.id=?
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status 
-    from
-        technicians t1_0 
-    where
-        t1_0.id=?
-2025-06-23T16:56:42.902-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-2025-06-23T16:56:42.902-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    delete 
-    from
-        technician_skills 
-    where
-        id=?
-Hibernate: 
-    delete 
-    from
-        technician_skills 
-    where
-        id=?
-2025-06-23T16:56:42.903-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    delete 
-    from
-        technician_skills 
-    where
-        id=?
-Hibernate: 
-    delete 
-    from
-        technician_skills 
-    where
-        id=?
-2025-06-23T16:56:42.903-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    delete 
-    from
-        technician_skills 
-    where
-        id=?
-Hibernate: 
-    delete 
-    from
-        technician_skills 
-    where
-        id=?
-2025-06-23T16:56:42.903-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-2025-06-23T16:56:42.903-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-2025-06-23T16:56:42.904-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-2025-06-23T16:56:42.904-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status,
-        ts1_0.service_type 
-    from
-        technician_skills ts1_0 
-    join
-        technicians t1_0 
-            on t1_0.id=ts1_0.technician_id 
-    where
-        exists(select
-            t2_0.id 
-        from
-            technicians t2_0 
-        where
-            not exists(select
-                ts2_0.id 
-            from
-                technician_skills ts2_0 
-            where
-                ts2_0.technician_id=t2_0.id 
-                and ts2_0.service_type=ts1_0.service_type) 
-            and t2_0.status='ACTIVE')
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status,
-        ts1_0.service_type 
-    from
-        technician_skills ts1_0 
-    join
-        technicians t1_0 
-            on t1_0.id=ts1_0.technician_id 
-    where
-        exists(select
-            t2_0.id 
-        from
-            technicians t2_0 
-        where
-            not exists(select
-                ts2_0.id 
-            from
-                technician_skills ts2_0 
-            where
-                ts2_0.technician_id=t2_0.id 
-                and ts2_0.service_type=ts1_0.service_type) 
-            and t2_0.status='ACTIVE')
-2025-06-23T16:56:42.907-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status,
-        ts1_0.service_type 
-    from
-        technicians t1_0,
-        technician_skills ts1_0 
-    where
-        t1_0.status='ACTIVE' 
-        and not exists(select
-            ts2_0.id 
-        from
-            technician_skills ts2_0 
-        where
-            ts2_0.technician_id=t1_0.id 
-            and ts2_0.service_type=ts1_0.service_type) 
-    order by
-        t1_0.id,
-        ts1_0.service_type
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status,
-        ts1_0.service_type 
-    from
-        technicians t1_0,
-        technician_skills ts1_0 
-    where
-        t1_0.status='ACTIVE' 
-        and not exists(select
-            ts2_0.id 
-        from
-            technician_skills ts2_0 
-        where
-            ts2_0.technician_id=t1_0.id 
-            and ts2_0.service_type=ts1_0.service_type) 
-    order by
-        t1_0.id,
-        ts1_0.service_type
-]]></system-out>
-  </testcase>
-  <testcase name="shouldHandleInactiveTechniciansInMentorshipQueries" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests" time="0.017">
-    <system-out><![CDATA[2025-06-23T16:56:42.913-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    select
-        ts1_0.id,
-        ts1_0.service_type,
-        ts1_0.technician_id 
-    from
-        technician_skills ts1_0
-Hibernate: 
-    select
-        ts1_0.id,
-        ts1_0.service_type,
-        ts1_0.technician_id 
-    from
-        technician_skills ts1_0
-2025-06-23T16:56:42.915-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technicians
-        (email, full_name, status, id) 
-    values
-        (?, ?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technicians
-        (email, full_name, status, id) 
-    values
-        (?, ?, ?, default)
-2025-06-23T16:56:42.915-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technicians
-        (email, full_name, status, id) 
-    values
-        (?, ?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technicians
-        (email, full_name, status, id) 
-    values
-        (?, ?, ?, default)
-2025-06-23T16:56:42.916-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technicians
-        (email, full_name, status, id) 
-    values
-        (?, ?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technicians
-        (email, full_name, status, id) 
-    values
-        (?, ?, ?, default)
-2025-06-23T16:56:42.916-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-2025-06-23T16:56:42.916-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-2025-06-23T16:56:42.917-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-Hibernate: 
-    insert 
-    into
-        technician_skills
-        (service_type, technician_id, id) 
-    values
-        (?, ?, default)
-2025-06-23T16:56:42.918-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status,
-        ts1_0.service_type 
-    from
-        technician_skills ts1_0 
-    join
-        technicians t1_0 
-            on t1_0.id=ts1_0.technician_id 
-    where
-        exists(select
-            t2_0.id 
-        from
-            technicians t2_0 
-        where
-            not exists(select
-                ts2_0.id 
-            from
-                technician_skills ts2_0 
-            where
-                ts2_0.technician_id=t2_0.id 
-                and ts2_0.service_type=ts1_0.service_type) 
-            and t2_0.status='ACTIVE')
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status,
-        ts1_0.service_type 
-    from
-        technician_skills ts1_0 
-    join
-        technicians t1_0 
-            on t1_0.id=ts1_0.technician_id 
-    where
-        exists(select
-            t2_0.id 
-        from
-            technicians t2_0 
-        where
-            not exists(select
-                ts2_0.id 
-            from
-                technician_skills ts2_0 
-            where
-                ts2_0.technician_id=t2_0.id 
-                and ts2_0.service_type=ts1_0.service_type) 
-            and t2_0.status='ACTIVE')
-2025-06-23T16:56:42.919-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status,
-        ts1_0.service_type 
-    from
-        technicians t1_0,
-        technician_skills ts1_0 
-    where
-        t1_0.status='ACTIVE' 
-        and not exists(select
-            ts2_0.id 
-        from
-            technician_skills ts2_0 
-        where
-            ts2_0.technician_id=t1_0.id 
-            and ts2_0.service_type=ts1_0.service_type) 
-    order by
-        t1_0.id,
-        ts1_0.service_type
-Hibernate: 
-    select
-        t1_0.id,
-        t1_0.email,
-        t1_0.full_name,
-        t1_0.status,
-        ts1_0.service_type 
-    from
-        technicians t1_0,
-        technician_skills ts1_0 
-    where
-        t1_0.status='ACTIVE' 
-        and not exists(select
-            ts2_0.id 
-        from
-            technician_skills ts2_0 
-        where
-            ts2_0.technician_id=t1_0.id 
-            and ts2_0.service_type=ts1_0.service_type) 
-    order by
-        t1_0.id,
-        ts1_0.service_type
-2025-06-23T16:56:42.920-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.772-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -1132,8 +550,8 @@ Hibernate:
             t1_0.id=at1_0.technician_id)
 ]]></system-out>
   </testcase>
-  <testcase name="shouldGetTrainingRecommendations" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests" time="0.014">
-    <system-out><![CDATA[2025-06-23T16:56:42.932-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldReturnEmptyWhenNoMentorsAvailable" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests" time="0.021">
+    <system-out><![CDATA[2025-06-23T17:05:47.780-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         ts1_0.id,
         ts1_0.service_type,
@@ -1147,7 +565,7 @@ Hibernate:
         ts1_0.technician_id 
     from
         technician_skills ts1_0
-2025-06-23T16:56:42.934-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.781-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1161,7 +579,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.935-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.782-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1175,7 +593,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.935-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.782-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -1189,7 +607,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-23T16:56:42.935-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.783-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -1203,7 +621,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:42.936-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.783-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -1217,7 +635,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:42.937-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.784-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -1231,7 +649,589 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-23T16:56:42.938-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:47.785-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    select
+        ts1_0.id,
+        ts1_0.service_type,
+        ts1_0.technician_id 
+    from
+        technician_skills ts1_0
+Hibernate: 
+    select
+        ts1_0.id,
+        ts1_0.service_type,
+        ts1_0.technician_id 
+    from
+        technician_skills ts1_0
+2025-06-23T17:05:47.786-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status 
+    from
+        technicians t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status 
+    from
+        technicians t1_0 
+    where
+        t1_0.id=?
+2025-06-23T17:05:47.787-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status 
+    from
+        technicians t1_0 
+    where
+        t1_0.id=?
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status 
+    from
+        technicians t1_0 
+    where
+        t1_0.id=?
+2025-06-23T17:05:47.788-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+2025-06-23T17:05:47.788-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    delete 
+    from
+        technician_skills 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        technician_skills 
+    where
+        id=?
+2025-06-23T17:05:47.789-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    delete 
+    from
+        technician_skills 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        technician_skills 
+    where
+        id=?
+2025-06-23T17:05:47.790-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    delete 
+    from
+        technician_skills 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        technician_skills 
+    where
+        id=?
+2025-06-23T17:05:47.790-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+2025-06-23T17:05:47.791-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+2025-06-23T17:05:47.791-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+2025-06-23T17:05:47.792-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status,
+        ts1_0.service_type 
+    from
+        technician_skills ts1_0 
+    join
+        technicians t1_0 
+            on t1_0.id=ts1_0.technician_id 
+    where
+        exists(select
+            t2_0.id 
+        from
+            technicians t2_0 
+        where
+            not exists(select
+                ts2_0.id 
+            from
+                technician_skills ts2_0 
+            where
+                ts2_0.technician_id=t2_0.id 
+                and ts2_0.service_type=ts1_0.service_type) 
+            and t2_0.status='ACTIVE')
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status,
+        ts1_0.service_type 
+    from
+        technician_skills ts1_0 
+    join
+        technicians t1_0 
+            on t1_0.id=ts1_0.technician_id 
+    where
+        exists(select
+            t2_0.id 
+        from
+            technicians t2_0 
+        where
+            not exists(select
+                ts2_0.id 
+            from
+                technician_skills ts2_0 
+            where
+                ts2_0.technician_id=t2_0.id 
+                and ts2_0.service_type=ts1_0.service_type) 
+            and t2_0.status='ACTIVE')
+2025-06-23T17:05:47.795-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status,
+        ts1_0.service_type 
+    from
+        technicians t1_0,
+        technician_skills ts1_0 
+    where
+        t1_0.status='ACTIVE' 
+        and not exists(select
+            ts2_0.id 
+        from
+            technician_skills ts2_0 
+        where
+            ts2_0.technician_id=t1_0.id 
+            and ts2_0.service_type=ts1_0.service_type) 
+    order by
+        t1_0.id,
+        ts1_0.service_type
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status,
+        ts1_0.service_type 
+    from
+        technicians t1_0,
+        technician_skills ts1_0 
+    where
+        t1_0.status='ACTIVE' 
+        and not exists(select
+            ts2_0.id 
+        from
+            technician_skills ts2_0 
+        where
+            ts2_0.technician_id=t1_0.id 
+            and ts2_0.service_type=ts1_0.service_type) 
+    order by
+        t1_0.id,
+        ts1_0.service_type
+]]></system-out>
+  </testcase>
+  <testcase name="shouldHandleInactiveTechniciansInMentorshipQueries" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests" time="0.011">
+    <system-out><![CDATA[2025-06-23T17:05:47.801-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    select
+        ts1_0.id,
+        ts1_0.service_type,
+        ts1_0.technician_id 
+    from
+        technician_skills ts1_0
+Hibernate: 
+    select
+        ts1_0.id,
+        ts1_0.service_type,
+        ts1_0.technician_id 
+    from
+        technician_skills ts1_0
+2025-06-23T17:05:47.802-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technicians
+        (email, full_name, status, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technicians
+        (email, full_name, status, id) 
+    values
+        (?, ?, ?, default)
+2025-06-23T17:05:47.802-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technicians
+        (email, full_name, status, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technicians
+        (email, full_name, status, id) 
+    values
+        (?, ?, ?, default)
+2025-06-23T17:05:47.802-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technicians
+        (email, full_name, status, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technicians
+        (email, full_name, status, id) 
+    values
+        (?, ?, ?, default)
+2025-06-23T17:05:47.802-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+2025-06-23T17:05:47.803-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+2025-06-23T17:05:47.803-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+2025-06-23T17:05:47.804-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status,
+        ts1_0.service_type 
+    from
+        technician_skills ts1_0 
+    join
+        technicians t1_0 
+            on t1_0.id=ts1_0.technician_id 
+    where
+        exists(select
+            t2_0.id 
+        from
+            technicians t2_0 
+        where
+            not exists(select
+                ts2_0.id 
+            from
+                technician_skills ts2_0 
+            where
+                ts2_0.technician_id=t2_0.id 
+                and ts2_0.service_type=ts1_0.service_type) 
+            and t2_0.status='ACTIVE')
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status,
+        ts1_0.service_type 
+    from
+        technician_skills ts1_0 
+    join
+        technicians t1_0 
+            on t1_0.id=ts1_0.technician_id 
+    where
+        exists(select
+            t2_0.id 
+        from
+            technicians t2_0 
+        where
+            not exists(select
+                ts2_0.id 
+            from
+                technician_skills ts2_0 
+            where
+                ts2_0.technician_id=t2_0.id 
+                and ts2_0.service_type=ts1_0.service_type) 
+            and t2_0.status='ACTIVE')
+2025-06-23T17:05:47.805-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status,
+        ts1_0.service_type 
+    from
+        technicians t1_0,
+        technician_skills ts1_0 
+    where
+        t1_0.status='ACTIVE' 
+        and not exists(select
+            ts2_0.id 
+        from
+            technician_skills ts2_0 
+        where
+            ts2_0.technician_id=t1_0.id 
+            and ts2_0.service_type=ts1_0.service_type) 
+    order by
+        t1_0.id,
+        ts1_0.service_type
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status,
+        ts1_0.service_type 
+    from
+        technicians t1_0,
+        technician_skills ts1_0 
+    where
+        t1_0.status='ACTIVE' 
+        and not exists(select
+            ts2_0.id 
+        from
+            technician_skills ts2_0 
+        where
+            ts2_0.technician_id=t1_0.id 
+            and ts2_0.service_type=ts1_0.service_type) 
+    order by
+        t1_0.id,
+        ts1_0.service_type
+2025-06-23T17:05:47.806-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status 
+    from
+        technician_skills ts1_0 
+    join
+        technicians t1_0 
+            on t1_0.id=ts1_0.technician_id 
+    where
+        ts1_0.service_type=? 
+        and t1_0.status='ACTIVE' 
+    order by
+        (select
+            count(*) 
+        from
+            tickets at1_0 
+        where
+            t1_0.id=at1_0.technician_id)
+Hibernate: 
+    select
+        t1_0.id,
+        t1_0.email,
+        t1_0.full_name,
+        t1_0.status 
+    from
+        technician_skills ts1_0 
+    join
+        technicians t1_0 
+            on t1_0.id=ts1_0.technician_id 
+    where
+        ts1_0.service_type=? 
+        and t1_0.status='ACTIVE' 
+    order by
+        (select
+            count(*) 
+        from
+            tickets at1_0 
+        where
+            t1_0.id=at1_0.technician_id)
+]]></system-out>
+  </testcase>
+  <testcase name="shouldGetTrainingRecommendations" classname="com.localtechsupport.repository.TechnicianSkillRepositoryTest$MentorshipAndTrainingTests" time="0.009">
+    <system-out><![CDATA[2025-06-23T17:05:47.812-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    select
+        ts1_0.id,
+        ts1_0.service_type,
+        ts1_0.technician_id 
+    from
+        technician_skills ts1_0
+Hibernate: 
+    select
+        ts1_0.id,
+        ts1_0.service_type,
+        ts1_0.technician_id 
+    from
+        technician_skills ts1_0
+2025-06-23T17:05:47.813-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technicians
+        (email, full_name, status, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technicians
+        (email, full_name, status, id) 
+    values
+        (?, ?, ?, default)
+2025-06-23T17:05:47.814-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technicians
+        (email, full_name, status, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technicians
+        (email, full_name, status, id) 
+    values
+        (?, ?, ?, default)
+2025-06-23T17:05:47.814-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technicians
+        (email, full_name, status, id) 
+    values
+        (?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technicians
+        (email, full_name, status, id) 
+    values
+        (?, ?, ?, default)
+2025-06-23T17:05:47.814-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+2025-06-23T17:05:47.815-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+2025-06-23T17:05:47.815-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+Hibernate: 
+    insert 
+    into
+        technician_skills
+        (service_type, technician_id, id) 
+    values
+        (?, ?, default)
+2025-06-23T17:05:47.816-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,

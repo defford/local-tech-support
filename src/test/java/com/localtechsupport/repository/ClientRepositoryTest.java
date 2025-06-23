@@ -569,22 +569,27 @@ class ClientRepositoryTest {
             entityManager.persistAndFlush(recentClient);
             entityManager.persistAndFlush(futureClient);
             
+            // Calculate exact times using the same baseTime to avoid race conditions
+            LocalDateTime oldTime = baseTime.minusHours(1).minusHours(1); // hourAgo - 1 hour
+            LocalDateTime recentTime = baseTime.minusHours(1).plusMinutes(30); // hourAgo + 30 minutes
+            LocalDateTime futureTime = baseTime.plusHours(1); // hourFromNow
+            
             // Update timestamps using native SQL to bypass Hibernate annotations
             entityManager.getEntityManager().createNativeQuery(
                 "UPDATE clients SET created_at = ? WHERE email = ?")
-                .setParameter(1, hourAgo.minusHours(1))
+                .setParameter(1, oldTime)
                 .setParameter(2, "old@example.com")
                 .executeUpdate();
                 
             entityManager.getEntityManager().createNativeQuery(
                 "UPDATE clients SET created_at = ? WHERE email = ?")
-                .setParameter(1, hourAgo.plusMinutes(30))
+                .setParameter(1, recentTime)
                 .setParameter(2, "recent@example.com")
                 .executeUpdate();
                 
             entityManager.getEntityManager().createNativeQuery(
                 "UPDATE clients SET created_at = ? WHERE email = ?")
-                .setParameter(1, hourFromNow)
+                .setParameter(1, futureTime)
                 .setParameter(2, "future@example.com")
                 .executeUpdate();
                 

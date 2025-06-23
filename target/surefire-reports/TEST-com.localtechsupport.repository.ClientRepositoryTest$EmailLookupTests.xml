@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.05" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.058" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T16-56-29_848-jvmRun1 surefire-20250623165629917_1tmp surefire_0-20250623165629917_2tmp"/>
+    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T17-05-30_331-jvmRun1 surefire-20250623170530409_1tmp surefire_0-20250623170530409_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="*RepositoryTest"/>
@@ -35,7 +35,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623165629917_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623170530409_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -54,7 +54,7 @@
     <property name="user.dir" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="32586"/>
+    <property name="PID" value="54740"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/danielefford/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -67,10 +67,10 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[tech-support-server] "/>
   </properties>
-  <testcase name="shouldFindClientByExactEmailMatch" classname="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.007">
-    <system-out><![CDATA[2025-06-23T16:56:46.261-02:30  INFO 32586 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests]: EmailLookupTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-06-23T16:56:46.266-02:30  INFO 32586 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests
-2025-06-23T16:56:46.269-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldFindClientByExactEmailMatch" classname="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.008">
+    <system-out><![CDATA[2025-06-23T17:05:51.421-02:30  INFO 54740 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests]: EmailLookupTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-23T17:05:51.427-02:30  INFO 54740 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests
+2025-06-23T17:05:51.430-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -98,7 +98,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.270-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.431-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -112,7 +112,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.272-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.433-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -147,7 +147,7 @@ Hibernate:
 ]]></system-out>
   </testcase>
   <testcase name="shouldReturnEmptyForNonExistingEmail" classname="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.006">
-    <system-out><![CDATA[2025-06-23T16:56:46.276-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+    <system-out><![CDATA[2025-06-23T17:05:51.439-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -175,7 +175,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.278-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.441-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -209,8 +209,8 @@ Hibernate:
         c1_0.email=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldReturnTrueWhenEmailExists" classname="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.006">
-    <system-out><![CDATA[2025-06-23T16:56:46.284-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldReturnTrueWhenEmailExists" classname="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.007">
+    <system-out><![CDATA[2025-06-23T17:05:51.446-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -238,7 +238,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.286-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.448-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -252,7 +252,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.287-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.449-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id 
     from
@@ -272,8 +272,8 @@ Hibernate:
         first ? rows only
 ]]></system-out>
   </testcase>
-  <testcase name="shouldBeCaseSensitiveForEmailSearch" classname="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.006">
-    <system-out><![CDATA[2025-06-23T16:56:46.291-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldBeCaseSensitiveForEmailSearch" classname="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.008">
+    <system-out><![CDATA[2025-06-23T17:05:51.454-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -301,7 +301,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.292-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.456-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -315,7 +315,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-23T16:56:46.293-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.457-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -347,7 +347,7 @@ Hibernate:
         clients c1_0 
     where
         c1_0.email=?
-2025-06-23T16:56:46.294-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.458-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -381,8 +381,8 @@ Hibernate:
         c1_0.email=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleNullEmailGracefullyInFindByEmail" classname="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.006">
-    <system-out><![CDATA[2025-06-23T16:56:46.299-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleNullEmailGracefullyInFindByEmail" classname="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.004">
+    <system-out><![CDATA[2025-06-23T17:05:51.462-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -410,7 +410,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.301-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.464-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -444,8 +444,8 @@ Hibernate:
         c1_0.email is null
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleEmptyEmailInFindByEmail" classname="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.004">
-    <system-out><![CDATA[2025-06-23T16:56:46.304-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleEmptyEmailInFindByEmail" classname="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.006">
+    <system-out><![CDATA[2025-06-23T17:05:51.468-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -473,7 +473,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.305-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.470-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -507,8 +507,8 @@ Hibernate:
         c1_0.email=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldReturnFalseWhenEmailDoesNotExist" classname="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.004">
-    <system-out><![CDATA[2025-06-23T16:56:46.308-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldReturnFalseWhenEmailDoesNotExist" classname="com.localtechsupport.repository.ClientRepositoryTest$EmailLookupTests" time="0.005">
+    <system-out><![CDATA[2025-06-23T17:05:51.474-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -536,7 +536,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-23T16:56:46.309-02:30 DEBUG 32586 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T17:05:51.476-02:30 DEBUG 54740 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id 
     from

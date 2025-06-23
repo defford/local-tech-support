@@ -452,8 +452,6 @@ class AppointmentRepositoryTest {
             assertThat(result.getContent().get(0).getTicket().getId()).isEqualTo(testTicket1.getId());
         }
 
-
-
         @Test
         @DisplayName("Should return empty when ticket has no appointments")
         void shouldReturnEmptyWhenTicketHasNoAppointments() {
@@ -483,9 +481,60 @@ class AppointmentRepositoryTest {
     @DisplayName("Time-Based Query Tests")
     class TimeBasedTests {
 
+        private Instant baseTime;
+        private Instant hourAgo;
+        private Instant hourFromNow;
+        private Instant dayAgo;
+        private Instant dayFromNow;
+
+        private Appointment createLocalTestAppointment(Technician technician, Ticket ticket, 
+                                                Instant startTime, Instant endTime, 
+                                                AppointmentStatus status) {
+            Appointment appointment = new Appointment();
+            appointment.setTechnician(technician);
+            appointment.setTicket(ticket);
+            appointment.setStartTime(startTime);
+            appointment.setEndTime(endTime);
+            appointment.setStatus(status);
+            appointment.setCreatedAt(baseTime);
+            appointment.setUpdatedAt(baseTime);
+            return appointment;
+        }
+
         @BeforeEach
         void setupTimeData() {
-            setupTestData();
+            // Use consistent base time for this test class to avoid race conditions
+            baseTime = Instant.now();
+            hourAgo = baseTime.minus(1, ChronoUnit.HOURS);
+            hourFromNow = baseTime.plus(1, ChronoUnit.HOURS);
+            dayAgo = baseTime.minus(1, ChronoUnit.DAYS);
+            dayFromNow = baseTime.plus(1, ChronoUnit.DAYS);
+            
+            // Create test data using the local time variables
+            testClient = createTestClient("client@example.com");
+            entityManager.persistAndFlush(testClient);
+
+            testTechnician1 = createTestTechnician("tech1@example.com", TechnicianStatus.ACTIVE);
+            testTechnician2 = createTestTechnician("tech2@example.com", TechnicianStatus.ACTIVE);
+            entityManager.persistAndFlush(testTechnician1);
+            entityManager.persistAndFlush(testTechnician2);
+
+            testTicket1 = createTestTicket(testClient, TicketStatus.OPEN);
+            testTicket2 = createTestTicket(testClient, TicketStatus.CLOSED);
+            entityManager.persistAndFlush(testTicket1);
+            entityManager.persistAndFlush(testTicket2);
+
+            testAppointment1 = createLocalTestAppointment(testTechnician1, testTicket1, 
+                hourFromNow, hourFromNow.plus(2, ChronoUnit.HOURS), AppointmentStatus.CONFIRMED);
+            testAppointment2 = createLocalTestAppointment(testTechnician2, testTicket2, 
+                dayFromNow, dayFromNow.plus(1, ChronoUnit.HOURS), AppointmentStatus.PENDING);
+            testAppointment3 = createLocalTestAppointment(testTechnician1, testTicket1, 
+                hourAgo, hourAgo.plus(30, ChronoUnit.MINUTES), AppointmentStatus.COMPLETED);
+
+            entityManager.persistAndFlush(testAppointment1);
+            entityManager.persistAndFlush(testAppointment2);
+            entityManager.persistAndFlush(testAppointment3);
+            entityManager.clear();
         }
 
         @Test
@@ -493,12 +542,12 @@ class AppointmentRepositoryTest {
         void shouldFindAppointmentsByStartTimeBetween() {
             // When
             Page<Appointment> result = appointmentRepository.findByStartTimeBetween(
-                now, dayFromNow.plus(1, ChronoUnit.HOURS), PageRequest.of(0, 10));
+                baseTime, dayFromNow.plus(1, ChronoUnit.HOURS), PageRequest.of(0, 10));
 
             // Then
             assertThat(result.getContent()).hasSize(2);
             assertThat(result.getContent()).allMatch(
-                appointment -> appointment.getStartTime().isAfter(now.minus(1, ChronoUnit.SECONDS)));
+                appointment -> appointment.getStartTime().isAfter(baseTime.minus(1, ChronoUnit.SECONDS)));
         }
 
         @Test
@@ -506,7 +555,7 @@ class AppointmentRepositoryTest {
         void shouldFindAppointmentsByStartTimeBetweenAsList() {
             // When
             List<Appointment> result = appointmentRepository.findByStartTimeBetween(
-                dayAgo, now);
+                dayAgo, baseTime);
 
             // Then
             assertThat(result).hasSize(1);
@@ -518,13 +567,11 @@ class AppointmentRepositoryTest {
         void shouldFindAppointmentsByEndTimeBetween() {
             // When
             Page<Appointment> result = appointmentRepository.findByEndTimeBetween(
-                now, dayFromNow.plus(2, ChronoUnit.HOURS), PageRequest.of(0, 10));
+                baseTime, dayFromNow.plus(2, ChronoUnit.HOURS), PageRequest.of(0, 10));
 
             // Then
             assertThat(result.getContent()).hasSize(2);
         }
-
-
 
         @Test
         @DisplayName("Should find appointments by time range")
@@ -554,7 +601,7 @@ class AppointmentRepositoryTest {
         @DisplayName("Should count appointments by start time between")
         void shouldCountAppointmentsByStartTimeBetween() {
             // When
-            long count = appointmentRepository.countByStartTimeBetween(now, dayFromNow.plus(1, ChronoUnit.HOURS));
+            long count = appointmentRepository.countByStartTimeBetween(baseTime, dayFromNow.plus(1, ChronoUnit.HOURS));
 
             // Then
             assertThat(count).isEqualTo(2);
