@@ -1,7 +1,18 @@
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/TechSupportServerApplication.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/config/package-info.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/controller/GlobalExceptionHandler.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/controller/TicketController.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/controller/package-info.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/package-info.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/AssignTechnicianRequest.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/CloseTicketRequest.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/CreateTicketRequest.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/UnassignTechnicianRequest.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/UpdateStatusRequest.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/response/ClientSummaryResponse.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/response/TechnicianSummaryResponse.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/response/TicketResponse.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/response/TicketStatisticsResponse.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/entity/Appointment.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/entity/AppointmentStatus.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/entity/Client.java
@@ -23,4 +34,5 @@
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/repository/TicketHistoryRepository.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/repository/TicketRepository.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/repository/package-info.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/service/TicketService.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/service/package-info.java
