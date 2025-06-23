@@ -19,6 +19,7 @@
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/repository/ClientRepository.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/repository/FeedbackEntryRepository.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/repository/TechnicianRepository.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/repository/TechnicianSkillRepository.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/repository/TicketHistoryRepository.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/repository/TicketRepository.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/repository/package-info.java

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.852" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="1.033" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -15,9 +15,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250622195534108_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-22T19-55-33_987-jvmRun1 surefire-20250622195534108_1tmp surefire_0-20250622195534108_2tmp"/>
+    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623114014376_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-23T11-40-14_240-jvmRun1 surefire-20250623114014376_1tmp surefire_0-20250623114014376_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
+    <property name="test" value="ClientRepositoryTest"/>
     <property name="surefire.test.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/test-classes:/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/classes:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.5.0/spring-boot-starter-data-jpa-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter/3.5.0/spring-boot-starter-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.5.0/spring-boot-starter-logging-3.5.0.jar:/Users/danielefford/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar:/Users/danielefford/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar:/Users/danielefford/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/danielefford/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/danielefford/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/Users/danielefford/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/danielefford/.m2/repository/org/yaml/snakeyaml/2.4/snakeyaml-2.4.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.5.0/spring-boot-starter-jdbc-3.5.0.jar:/Users/danielefford/.m2/repository/com/zaxxer/HikariCP/6.3.0/HikariCP-6.3.0.jar:/Users/danielefford/.m2/repository/org/springframework/spring-jdbc/6.2.7/spring-jdbc-6.2.7.jar:/Users/danielefford/.m2/repository/org/hibernate/orm/hibernate-core/6.6.15.Final/hibernate-core-6.6.15.Final.jar:/Users/danielefford/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/danielefford/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/danielefford/.m2/repository/org/jboss/logging/jboss-logging/3.6.1.Final/jboss-logging-3.6.1.Final.jar:/Users/danielefford/.m2/repository/org/hibernate/common/hibernate-commons-annotations/7.0.3.Final/hibernate-commons-annotations-7.0.3.Final.jar:/Users/danielefford/.m2/repository/io/smallrye/jandex/3.2.0/jandex-3.2.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/Users/danielefford/.m2/repository/net/bytebuddy/byte-buddy/1.17.5/byte-buddy-1.17.5.jar:/Users/danielefford/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/danielefford/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/danielefford/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/danielefford/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/danielefford/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/danielefford/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/danielefford/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/danielefford/.m2/repository/org/springframework/data/spring-data-jpa/3.5.0/spring-data-jpa-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/data/spring-data-commons/3.5.0/spring-data-commons-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/spring-orm/6.2.7/spring-orm-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-context/6.2.7/spring-context-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-aop/6.2.7/spring-aop-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-tx/6.2.7/spring-tx-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-beans/6.2.7/spring-beans-6.2.7.jar:/Users/danielefford/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/danielefford/.m2/repository/org/springframework/spring-aspects/6.2.7/spring-aspects-6.2.7.jar:/Users/danielefford/.m2/repository/org/aspectj/aspectjweaver/1.9.24/aspectjweaver-1.9.24.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.5.0/spring-boot-starter-web-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.5.0/spring-boot-starter-json-3.5.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.0/jackson-databind-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.0/jackson-annotations-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.0/jackson-core-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.19.0/jackson-datatype-jdk8-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.19.0/jackson-datatype-jsr310-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.19.0/jackson-module-parameter-names-2.19.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.5.0/spring-boot-starter-tomcat-3.5.0.jar:/Users/danielefford/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.41/tomcat-embed-core-10.1.41.jar:/Users/danielefford/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.41/tomcat-embed-websocket-10.1.41.jar:/Users/danielefford/.m2/repository/org/springframework/spring-web/6.2.7/spring-web-6.2.7.jar:/Users/danielefford/.m2/repository/io/micrometer/micrometer-observation/1.15.0/micrometer-observation-1.15.0.jar:/Users/danielefford/.m2/repository/io/micrometer/micrometer-commons/1.15.0/micrometer-commons-1.15.0.jar:/Users/danielefford/.m2/repository/org/springframework/spring-webmvc/6.2.7/spring-webmvc-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-expression/6.2.7/spring-expression-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-devtools/3.5.0/spring-boot-devtools-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot/3.5.0/spring-boot-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.5.0/spring-boot-autoconfigure-3.5.0.jar:/Users/danielefford/.m2/repository/com/h2database/h2/2.3.232/h2-2.3.232.jar:/Users/danielefford/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:/Users/danielefford/.m2/repository/com/mysql/mysql-connector-j/9.2.0/mysql-connector-j-9.2.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.5.0/spring-boot-starter-validation-3.5.0.jar:/Users/danielefford/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.41/tomcat-embed-el-10.1.41.jar:/Users/danielefford/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.2.Final/hibernate-validator-8.0.2.Final.jar:/Users/danielefford/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.5.0/spring-boot-starter-test-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-test/3.5.0/spring-boot-test-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.5.0/spring-boot-test-autoconfigure-3.5.0.jar:/Users/danielefford/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/danielefford/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/danielefford/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/danielefford/.m2/repository/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar:/Users/danielefford/.m2/repository/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar:/Users/danielefford/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/Users/danielefford/.m2/repository/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar:/Users/danielefford/.m2/repository/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar:/Users/danielefford/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/Users/danielefford/.m2/repository/org/junit/jupiter/junit-jupiter/5.12.2/junit-jupiter-5.12.2.jar:/Users/danielefford/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar:/Users/danielefford/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/danielefford/.m2/repository/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar:/Users/danielefford/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/danielefford/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar:/Users/danielefford/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar:/Users/danielefford/.m2/repository/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar:/Users/danielefford/.m2/repository/org/mockito/mockito-core/5.17.0/mockito-core-5.17.0.jar:/Users/danielefford/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.5/byte-buddy-agent-1.17.5.jar:/Users/danielefford/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/danielefford/.m2/repository/org/mockito/mockito-junit-jupiter/5.17.0/mockito-junit-jupiter-5.17.0.jar:/Users/danielefford/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/danielefford/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/danielefford/.m2/repository/org/springframework/spring-core/6.2.7/spring-core-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-jcl/6.2.7/spring-jcl-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-test/6.2.7/spring-test-6.2.7.jar:/Users/danielefford/.m2/repository/org/xmlunit/xmlunit-core/2.10.1/xmlunit-core-2.10.1.jar:/Users/danielefford/.m2/repository/com/unboundid/unboundid-ldapsdk/7.0.2/unboundid-ldapsdk-7.0.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/danielefford"/>
@@ -34,7 +35,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250622195534108_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250623114014376_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -53,7 +54,7 @@
     <property name="user.dir" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="23595"/>
+    <property name="PID" value="53512"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/danielefford/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -66,10 +67,10 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[tech-support-server] "/>
   </properties>
-  <testcase name="shouldHandleSortingByEmailDescending" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.07">
-    <system-out><![CDATA[2025-06-22T19:56:05.671-02:30  INFO 23595 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.ClientRepositoryTest$PaginationTests]: PaginationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-06-22T19:56:05.676-02:30  INFO 23595 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.ClientRepositoryTest$PaginationTests
-2025-06-22T19:56:05.690-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleSortingByEmailDescending" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.271">
+    <system-out><![CDATA[2025-06-23T11:40:30.722-02:30  INFO 53512 --- [tech-support-server] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.localtechsupport.repository.ClientRepositoryTest$PaginationTests]: PaginationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-06-23T11:40:30.753-02:30  INFO 53512 --- [tech-support-server] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.ClientRepositoryTest$PaginationTests
+2025-06-23T11:40:30.767-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -97,7 +98,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-22T19:56:05.692-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.782-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -111,7 +112,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.694-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.803-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -125,7 +126,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.696-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.809-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -139,7 +140,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.697-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.819-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -153,7 +154,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.698-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.824-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -167,7 +168,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.702-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.828-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -181,7 +182,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.703-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.834-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -195,7 +196,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.705-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.875-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -209,7 +210,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.706-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.884-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -223,7 +224,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.708-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.890-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -237,7 +238,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.715-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.892-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -251,7 +252,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.720-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.896-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -265,7 +266,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.723-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.900-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -279,7 +280,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.724-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.903-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -293,7 +294,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.727-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.908-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -307,7 +308,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.736-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.930-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -347,7 +348,7 @@ Hibernate:
         ? rows 
     fetch
         first ? rows only
-2025-06-22T19:56:05.742-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:30.976-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(c1_0.id) 
     from
@@ -359,8 +360,8 @@ Hibernate:
         clients c1_0
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleFirstPageCorrectly" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.11">
-    <system-out><![CDATA[2025-06-22T19:56:05.757-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleFirstPageCorrectly" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.083">
+    <system-out><![CDATA[2025-06-23T11:40:31.041-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -388,7 +389,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-22T19:56:05.767-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.047-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -402,7 +403,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.768-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.050-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -416,7 +417,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.769-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.053-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -430,7 +431,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.769-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.056-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -444,7 +445,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.769-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.059-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -458,7 +459,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.769-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.062-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -472,7 +473,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.770-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.064-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -486,7 +487,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.778-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.066-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -500,7 +501,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.782-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.069-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -514,7 +515,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.783-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.071-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -528,7 +529,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.784-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.074-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -542,7 +543,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.785-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.078-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -556,7 +557,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.786-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.080-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -570,7 +571,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.789-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.081-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -584,7 +585,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.794-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.085-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -598,7 +599,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.822-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.093-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -634,7 +635,7 @@ Hibernate:
         c1_0.status=? 
     fetch
         first ? rows only
-2025-06-22T19:56:05.853-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.098-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(c1_0.id) 
     from
@@ -650,8 +651,8 @@ Hibernate:
         c1_0.status=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleEmptyResultsWithPagination" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.051">
-    <system-out><![CDATA[2025-06-22T19:56:05.873-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleEmptyResultsWithPagination" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.065">
+    <system-out><![CDATA[2025-06-23T11:40:31.122-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -679,7 +680,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-22T19:56:05.879-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.126-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -693,7 +694,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.880-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.129-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -707,7 +708,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.881-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.134-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -721,7 +722,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.882-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.140-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -735,7 +736,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.883-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.146-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -749,7 +750,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.884-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.149-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -763,7 +764,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.885-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.151-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -777,7 +778,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.887-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.153-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -791,7 +792,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.887-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.155-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -805,7 +806,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.889-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.157-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -819,7 +820,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.891-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.159-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -833,7 +834,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.892-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.162-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -847,7 +848,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.893-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.164-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -861,7 +862,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.895-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.167-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -875,7 +876,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.897-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.169-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -889,7 +890,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.909-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.174-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -927,8 +928,8 @@ Hibernate:
         first ? rows only
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandlePageBeyondAvailableData" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.393">
-    <system-out><![CDATA[2025-06-22T19:56:05.922-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandlePageBeyondAvailableData" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.095">
+    <system-out><![CDATA[2025-06-23T11:40:31.213-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -956,7 +957,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-22T19:56:05.927-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.216-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -970,7 +971,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.928-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.217-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -984,7 +985,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.930-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.219-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -998,7 +999,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.935-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.223-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1012,7 +1013,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.936-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.226-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1026,7 +1027,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.936-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.230-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1040,7 +1041,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.938-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.232-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1054,7 +1055,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.940-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.234-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1068,7 +1069,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.941-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.237-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1082,7 +1083,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.942-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.240-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1096,7 +1097,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.943-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.242-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1110,7 +1111,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.944-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.246-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1124,7 +1125,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.945-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.249-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1138,7 +1139,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.946-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.251-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1152,7 +1153,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:05.946-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.252-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1166,7 +1167,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.005-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.257-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -1202,7 +1203,7 @@ Hibernate:
         ? rows 
     fetch
         first ? rows only
-2025-06-22T19:56:06.028-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.263-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(c1_0.id) 
     from
@@ -1214,8 +1215,8 @@ Hibernate:
         clients c1_0
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleSortingByFirstNameAscending" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.036">
-    <system-out><![CDATA[2025-06-22T19:56:06.317-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleSortingByFirstNameAscending" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.092">
+    <system-out><![CDATA[2025-06-23T11:40:31.296-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -1243,7 +1244,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-22T19:56:06.319-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.308-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1257,7 +1258,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.320-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.313-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1271,7 +1272,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.321-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.316-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1285,7 +1286,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.322-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.323-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1299,7 +1300,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.323-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.328-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1313,7 +1314,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.324-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.330-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1327,7 +1328,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.324-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.335-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1341,7 +1342,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.324-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.341-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1355,7 +1356,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.324-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.343-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1369,7 +1370,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.325-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.346-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1383,7 +1384,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.325-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.348-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1397,7 +1398,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.326-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.351-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1411,7 +1412,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.326-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.354-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1425,7 +1426,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.326-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.357-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1439,7 +1440,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.326-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.359-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1453,7 +1454,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.338-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.364-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -1493,7 +1494,7 @@ Hibernate:
         ? rows 
     fetch
         first ? rows only
-2025-06-22T19:56:06.341-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.368-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(c1_0.id) 
     from
@@ -1505,8 +1506,8 @@ Hibernate:
         clients c1_0
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleMiddlePageCorrectly" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.05">
-    <system-out><![CDATA[2025-06-22T19:56:06.356-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleMiddlePageCorrectly" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.268">
+    <system-out><![CDATA[2025-06-23T11:40:31.386-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -1534,7 +1535,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-22T19:56:06.358-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.394-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1548,7 +1549,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.359-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.398-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1562,7 +1563,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.361-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.400-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1576,7 +1577,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.363-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.402-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1590,7 +1591,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.363-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.412-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1604,7 +1605,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.364-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.415-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1618,7 +1619,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.365-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.464-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1632,7 +1633,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.366-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.465-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1646,7 +1647,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.368-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.470-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1660,7 +1661,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.369-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.473-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1674,7 +1675,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.369-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.475-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1688,7 +1689,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.370-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.521-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1702,7 +1703,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.371-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.530-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1716,7 +1717,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.372-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.549-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1730,7 +1731,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.374-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.568-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1744,7 +1745,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.378-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.631-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -1780,7 +1781,7 @@ Hibernate:
         ? rows 
     fetch
         first ? rows only
-2025-06-22T19:56:06.392-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.636-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(c1_0.id) 
     from
@@ -1792,8 +1793,8 @@ Hibernate:
         clients c1_0
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleLastPageCorrectly" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.119">
-    <system-out><![CDATA[2025-06-22T19:56:06.409-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleLastPageCorrectly" classname="com.localtechsupport.repository.ClientRepositoryTest$PaginationTests" time="0.065">
+    <system-out><![CDATA[2025-06-23T11:40:31.655-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -1821,7 +1822,7 @@ Hibernate:
         c1_0.updated_at 
     from
         clients c1_0
-2025-06-22T19:56:06.415-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.658-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1835,7 +1836,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.417-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.660-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1849,7 +1850,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.422-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.662-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1863,7 +1864,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.424-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.664-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1877,7 +1878,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.428-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.665-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1891,7 +1892,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.430-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.666-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1905,7 +1906,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.433-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.666-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1919,7 +1920,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.434-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.667-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1933,7 +1934,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.436-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.670-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1947,7 +1948,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.439-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.673-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1961,7 +1962,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.440-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.674-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1975,7 +1976,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.443-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.676-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -1989,7 +1990,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.457-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.682-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -2003,7 +2004,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.458-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.688-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -2017,7 +2018,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.458-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.691-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         clients
@@ -2031,7 +2032,7 @@ Hibernate:
         (address, created_at, email, first_name, last_name, notes, phone, status, updated_at, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, default)
-2025-06-22T19:56:06.508-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.700-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.address,
@@ -2067,7 +2068,7 @@ Hibernate:
         ? rows 
     fetch
         first ? rows only
-2025-06-22T19:56:06.510-02:30 DEBUG 23595 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-23T11:40:31.705-02:30 DEBUG 53512 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(c1_0.id) 
     from

@@ -53,6 +53,7 @@ com/localtechsupport/entity/TicketHistoryTest$StatusTests.class
 com/localtechsupport/repository/AppointmentRepositoryTest$TicketBasedTests.class
 com/localtechsupport/entity/TechnicianSkillTest$RelationshipTests.class
 com/localtechsupport/entity/ClientTest.class
+com/localtechsupport/repository/TechnicianSkillRepositoryTest.class
 com/localtechsupport/entity/FeedbackEntryTest$CommentTests.class
 com/localtechsupport/entity/FeedbackEntryTest$RatingTests.class
 com/localtechsupport/entity/ClientTest$ToStringTests.class

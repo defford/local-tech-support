@@ -1,0 +1,51 @@
+-------------------------------------------------------------------------------
+Test set: com.localtechsupport.repository.TechnicianSkillRepositoryTest$DataIntegrityTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.083 s <<< FAILURE! -- in com.localtechsupport.repository.TechnicianSkillRepositoryTest$DataIntegrityTests
+com.localtechsupport.repository.TechnicianSkillRepositoryTest$DataIntegrityTests.shouldEnforceUniqueConstraintOnTechnicianServiceTypePair -- Time elapsed: 0.014 s <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting code to raise a throwable.
+	at com.localtechsupport.repository.TechnicianSkillRepositoryTest$DataIntegrityTests.shouldEnforceUniqueConstraintOnTechnicianServiceTypePair(TechnicianSkillRepositoryTest.java:1143)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+com.localtechsupport.repository.TechnicianSkillRepositoryTest$DataIntegrityTests.shouldHandleCascadingOperationsCorrectly -- Time elapsed: 0.013 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: java.lang.IllegalStateException: org.hibernate.TransientObjectException: persistent instance references an unsaved transient instance of 'com.localtechsupport.entity.Technician' (save the transient instance before flushing)
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertDoesNotThrow.createAssertionFailedError(AssertDoesNotThrow.java:84)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:53)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:36)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3199)
+	at com.localtechsupport.repository.TechnicianSkillRepositoryTest$DataIntegrityTests.shouldHandleCascadingOperationsCorrectly(TechnicianSkillRepositoryTest.java:1203)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.IllegalStateException: org.hibernate.TransientObjectException: persistent instance references an unsaved transient instance of 'com.localtechsupport.entity.Technician' (save the transient instance before flushing)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:167)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:173)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1433)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1415)
+	at org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager.flush(TestEntityManager.java:171)
+	at com.localtechsupport.repository.TechnicianSkillRepositoryTest$DataIntegrityTests.lambda$4(TechnicianSkillRepositoryTest.java:1205)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:49)
+	... 7 more
+Caused by: org.hibernate.TransientObjectException: persistent instance references an unsaved transient instance of 'com.localtechsupport.entity.Technician' (save the transient instance before flushing)
+	at org.hibernate.engine.spi.CascadingActions$9.cascade(CascadingActions.java:382)
+	at org.hibernate.engine.spi.CascadingActions$9.cascade(CascadingActions.java:372)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:570)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:492)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:253)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:192)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.prepareEntityFlushes(AbstractFlushingEventListener.java:169)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.preFlush(AbstractFlushingEventListener.java:107)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:82)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429)
+	... 11 more
+

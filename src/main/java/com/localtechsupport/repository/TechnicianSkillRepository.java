@@ -96,11 +96,13 @@ public interface TechnicianSkillRepository extends JpaRepository<TechnicianSkill
     @Query(TECHNICIAN_SKILL_COUNT_QUERY)
     List<Object[]> getTechnicianSkillCounts();
 
-    // Find technicians with no skills (training needs)
-    @Query("SELECT t FROM Technician t WHERE NOT EXISTS (SELECT ts FROM TechnicianSkill ts WHERE ts.technician = t)")
+    // Find technicians with no skills (training needs) - using native SQL to avoid Hibernate JPQL optimization issues
+    @Query(value = "SELECT t.* FROM technicians t WHERE t.id NOT IN (SELECT DISTINCT ts.technician_id FROM technician_skills ts WHERE ts.technician_id IS NOT NULL)", nativeQuery = true)
     List<Technician> findTechniciansWithNoSkills();
 
-    @Query("SELECT t FROM Technician t WHERE NOT EXISTS (SELECT ts FROM TechnicianSkill ts WHERE ts.technician = t)")
+    @Query(value = "SELECT t.* FROM technicians t WHERE t.id NOT IN (SELECT DISTINCT ts.technician_id FROM technician_skills ts WHERE ts.technician_id IS NOT NULL)", 
+           countQuery = "SELECT COUNT(t.id) FROM technicians t WHERE t.id NOT IN (SELECT DISTINCT ts.technician_id FROM technician_skills ts WHERE ts.technician_id IS NOT NULL)",
+           nativeQuery = true)
     Page<Technician> findTechniciansWithNoSkills(Pageable pageable);
 
     // Find technicians with only one skill (cross-training candidates)
@@ -108,11 +110,11 @@ public interface TechnicianSkillRepository extends JpaRepository<TechnicianSkill
     List<Technician> findTechniciansWithSingleSkill();
 
     // Find technicians with all available skills (versatile technicians)
-    @Query("SELECT ts.technician FROM TechnicianSkill ts GROUP BY ts.technician HAVING COUNT(DISTINCT ts.serviceType) = (SELECT COUNT(DISTINCT st) FROM TechnicianSkill st)")
+    @Query("SELECT ts.technician FROM TechnicianSkill ts GROUP BY ts.technician HAVING COUNT(DISTINCT ts.serviceType) = (SELECT COUNT(DISTINCT st.serviceType) FROM TechnicianSkill st)")
     List<Technician> findFullyQualifiedTechnicians();
 
     // Skill gap analysis
-    @Query("SELECT st FROM ServiceType st WHERE st NOT IN (SELECT DISTINCT ts.serviceType FROM TechnicianSkill ts WHERE ts.technician = :technician)")
+    @Query("SELECT DISTINCT ts.serviceType FROM TechnicianSkill ts WHERE ts.serviceType NOT IN (SELECT DISTINCT ts2.serviceType FROM TechnicianSkill ts2 WHERE ts2.technician = :technician)")
     List<ServiceType> findMissingSkillsForTechnician(@Param("technician") Technician technician);
 
     // Find underrepresented skills (skills with few technicians)
@@ -140,7 +142,7 @@ public interface TechnicianSkillRepository extends JpaRepository<TechnicianSkill
     List<Object[]> findPotentialMentorsBySkill();
 
     // Training recommendations (skills needed by technicians)
-    @Query("SELECT t, st FROM Technician t, ServiceType st WHERE t.status = com.localtechsupport.entity.TechnicianStatus.ACTIVE AND NOT EXISTS (SELECT ts FROM TechnicianSkill ts WHERE ts.technician = t AND ts.serviceType = st) ORDER BY t.id, st")
+    @Query("SELECT t, ts.serviceType FROM Technician t, TechnicianSkill ts WHERE t.status = com.localtechsupport.entity.TechnicianStatus.ACTIVE AND NOT EXISTS (SELECT ts2 FROM TechnicianSkill ts2 WHERE ts2.technician = t AND ts2.serviceType = ts.serviceType) ORDER BY t.id, ts.serviceType")
     List<Object[]> getTrainingRecommendations();
 
     // Skill assignment optimization (find best technician for service type)
