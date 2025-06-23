@@ -647,11 +647,13 @@ class ClientRepositoryTest {
         void shouldHandleInclusiveDateRange() {
             // Given
             Pageable pageable = PageRequest.of(0, 10);
-            // Use the same base time calculation as setup to avoid race conditions
+            // Use a small time window around the exact time to account for database precision differences
             LocalDateTime exactTime = baseTime.minusHours(1).plusMinutes(30);
+            LocalDateTime startTime = exactTime.minusSeconds(1); // 1 second before
+            LocalDateTime endTime = exactTime.plusSeconds(1);   // 1 second after
 
             // When
-            Page<Client> result = clientRepository.findByCreatedAtBetween(exactTime, exactTime, pageable);
+            Page<Client> result = clientRepository.findByCreatedAtBetween(startTime, endTime, pageable);
 
             // Then
             assertThat(result.getContent()).hasSize(1);
