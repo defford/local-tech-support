@@ -642,7 +642,8 @@ class ClientRepositoryTest {
         void shouldHandleInclusiveDateRange() {
             // Given
             Pageable pageable = PageRequest.of(0, 10);
-            LocalDateTime exactTime = hourAgo.plusMinutes(30);
+            // Use the same base time calculation as setup to avoid race conditions
+            LocalDateTime exactTime = baseTime.minusHours(1).plusMinutes(30);
 
             // When
             Page<Client> result = clientRepository.findByCreatedAtBetween(exactTime, exactTime, pageable);
@@ -679,10 +680,14 @@ class ClientRepositoryTest {
     @Nested
     @DisplayName("Combined Filtering Tests")
     class CombinedFilteringTests {
+        
+        private LocalDateTime baseTime;
+        private LocalDateTime hourAgo;
 
         @BeforeEach
         void setupCombinedData() {
-            LocalDateTime hourAgo = LocalDateTime.now().minusHours(1);
+            baseTime = LocalDateTime.now();
+            hourAgo = baseTime.minusHours(1);
             
             // Active client created recently
             Client activeRecent = createTestClient("John", "Doe", "active.recent@example.com", ClientStatus.ACTIVE);
@@ -724,7 +729,6 @@ class ClientRepositoryTest {
         @DisplayName("Should find active clients created after specific date")
         void shouldFindActiveClientsCreatedAfterSpecificDate() {
             // Given
-            LocalDateTime hourAgo = LocalDateTime.now().minusHours(1);
             Pageable pageable = PageRequest.of(0, 10);
 
             // When
@@ -741,7 +745,6 @@ class ClientRepositoryTest {
         @DisplayName("Should find inactive clients created after specific date")
         void shouldFindInactiveClientsCreatedAfterSpecificDate() {
             // Given
-            LocalDateTime hourAgo = LocalDateTime.now().minusHours(1);
             Pageable pageable = PageRequest.of(0, 10);
 
             // When
@@ -758,7 +761,7 @@ class ClientRepositoryTest {
         @DisplayName("Should return empty when no clients match combined criteria")
         void shouldReturnEmptyWhenNoClientsMatchCombinedCriteria() {
             // Given
-            LocalDateTime futureDate = LocalDateTime.now().plusDays(1);
+            LocalDateTime futureDate = baseTime.plusDays(1);
             Pageable pageable = PageRequest.of(0, 10);
 
             // When
@@ -773,7 +776,6 @@ class ClientRepositoryTest {
         @DisplayName("Should handle suspended status in combined query")
         void shouldHandleSuspendedStatusInCombinedQuery() {
             // Given
-            LocalDateTime hourAgo = LocalDateTime.now().minusHours(1);
             Pageable pageable = PageRequest.of(0, 10);
 
             // When

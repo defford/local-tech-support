@@ -14,6 +14,7 @@ com/localtechsupport/entity/FeedbackEntry.class
 com/localtechsupport/entity/package-info.class
 com/localtechsupport/entity/TechnicianStatus.class
 com/localtechsupport/entity/TechnicianSkill.class
+com/localtechsupport/repository/TechnicianSkillRepository.class
 com/localtechsupport/service/package-info.class
 com/localtechsupport/entity/AppointmentStatus.class
 com/localtechsupport/config/package-info.class
