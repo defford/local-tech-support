@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests" time="4.241" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests" time="7.455" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250624134737797_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-24T13-47-37_737-jvmRun1 surefire-20250624134737797_1tmp surefire_0-20250624134737797_2tmp"/>
+    <property name="sun.java.command" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250624155116472_3.jar /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire 2025-06-24T15-51-16_401-jvmRun1 surefire-20250624155116472_1tmp surefire_0-20250624155116472_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/test-classes:/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/classes:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.5.0/spring-boot-starter-data-jpa-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter/3.5.0/spring-boot-starter-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.5.0/spring-boot-starter-logging-3.5.0.jar:/Users/danielefford/.m2/repository/ch/qos/logback/logback-classic/1.5.18/logback-classic-1.5.18.jar:/Users/danielefford/.m2/repository/ch/qos/logback/logback-core/1.5.18/logback-core-1.5.18.jar:/Users/danielefford/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.24.3/log4j-to-slf4j-2.24.3.jar:/Users/danielefford/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/danielefford/.m2/repository/org/slf4j/jul-to-slf4j/2.0.17/jul-to-slf4j-2.0.17.jar:/Users/danielefford/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/danielefford/.m2/repository/org/yaml/snakeyaml/2.4/snakeyaml-2.4.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.5.0/spring-boot-starter-jdbc-3.5.0.jar:/Users/danielefford/.m2/repository/com/zaxxer/HikariCP/6.3.0/HikariCP-6.3.0.jar:/Users/danielefford/.m2/repository/org/springframework/spring-jdbc/6.2.7/spring-jdbc-6.2.7.jar:/Users/danielefford/.m2/repository/org/hibernate/orm/hibernate-core/6.6.15.Final/hibernate-core-6.6.15.Final.jar:/Users/danielefford/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/danielefford/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/danielefford/.m2/repository/org/jboss/logging/jboss-logging/3.6.1.Final/jboss-logging-3.6.1.Final.jar:/Users/danielefford/.m2/repository/org/hibernate/common/hibernate-commons-annotations/7.0.3.Final/hibernate-commons-annotations-7.0.3.Final.jar:/Users/danielefford/.m2/repository/io/smallrye/jandex/3.2.0/jandex-3.2.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/classmate/1.7.0/classmate-1.7.0.jar:/Users/danielefford/.m2/repository/net/bytebuddy/byte-buddy/1.17.5/byte-buddy-1.17.5.jar:/Users/danielefford/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.5/jaxb-runtime-4.0.5.jar:/Users/danielefford/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/danielefford/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/danielefford/.m2/repository/org/glassfish/jaxb/txw2/4.0.5/txw2-4.0.5.jar:/Users/danielefford/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/danielefford/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/danielefford/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/danielefford/.m2/repository/org/springframework/data/spring-data-jpa/3.5.0/spring-data-jpa-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/data/spring-data-commons/3.5.0/spring-data-commons-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/spring-orm/6.2.7/spring-orm-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-context/6.2.7/spring-context-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-aop/6.2.7/spring-aop-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-tx/6.2.7/spring-tx-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-beans/6.2.7/spring-beans-6.2.7.jar:/Users/danielefford/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:/Users/danielefford/.m2/repository/org/springframework/spring-aspects/6.2.7/spring-aspects-6.2.7.jar:/Users/danielefford/.m2/repository/org/aspectj/aspectjweaver/1.9.24/aspectjweaver-1.9.24.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.5.0/spring-boot-starter-web-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.5.0/spring-boot-starter-json-3.5.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.0/jackson-databind-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.0/jackson-annotations-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.0/jackson-core-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.19.0/jackson-datatype-jdk8-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.19.0/jackson-datatype-jsr310-2.19.0.jar:/Users/danielefford/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.19.0/jackson-module-parameter-names-2.19.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.5.0/spring-boot-starter-tomcat-3.5.0.jar:/Users/danielefford/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.41/tomcat-embed-core-10.1.41.jar:/Users/danielefford/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.41/tomcat-embed-websocket-10.1.41.jar:/Users/danielefford/.m2/repository/org/springframework/spring-web/6.2.7/spring-web-6.2.7.jar:/Users/danielefford/.m2/repository/io/micrometer/micrometer-observation/1.15.0/micrometer-observation-1.15.0.jar:/Users/danielefford/.m2/repository/io/micrometer/micrometer-commons/1.15.0/micrometer-commons-1.15.0.jar:/Users/danielefford/.m2/repository/org/springframework/spring-webmvc/6.2.7/spring-webmvc-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-expression/6.2.7/spring-expression-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-devtools/3.5.0/spring-boot-devtools-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot/3.5.0/spring-boot-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.5.0/spring-boot-autoconfigure-3.5.0.jar:/Users/danielefford/.m2/repository/com/h2database/h2/2.3.232/h2-2.3.232.jar:/Users/danielefford/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:/Users/danielefford/.m2/repository/com/mysql/mysql-connector-j/9.2.0/mysql-connector-j-9.2.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.5.0/spring-boot-starter-validation-3.5.0.jar:/Users/danielefford/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.41/tomcat-embed-el-10.1.41.jar:/Users/danielefford/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.2.Final/hibernate-validator-8.0.2.Final.jar:/Users/danielefford/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.5.0/spring-boot-starter-test-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-test/3.5.0/spring-boot-test-3.5.0.jar:/Users/danielefford/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.5.0/spring-boot-test-autoconfigure-3.5.0.jar:/Users/danielefford/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/Users/danielefford/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/danielefford/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/danielefford/.m2/repository/net/minidev/json-smart/2.5.2/json-smart-2.5.2.jar:/Users/danielefford/.m2/repository/net/minidev/accessors-smart/2.5.2/accessors-smart-2.5.2.jar:/Users/danielefford/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar:/Users/danielefford/.m2/repository/org/assertj/assertj-core/3.27.3/assertj-core-3.27.3.jar:/Users/danielefford/.m2/repository/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar:/Users/danielefford/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar:/Users/danielefford/.m2/repository/org/junit/jupiter/junit-jupiter/5.12.2/junit-jupiter-5.12.2.jar:/Users/danielefford/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar:/Users/danielefford/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/danielefford/.m2/repository/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar:/Users/danielefford/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/danielefford/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar:/Users/danielefford/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar:/Users/danielefford/.m2/repository/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar:/Users/danielefford/.m2/repository/org/mockito/mockito-core/5.17.0/mockito-core-5.17.0.jar:/Users/danielefford/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.5/byte-buddy-agent-1.17.5.jar:/Users/danielefford/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/danielefford/.m2/repository/org/mockito/mockito-junit-jupiter/5.17.0/mockito-junit-jupiter-5.17.0.jar:/Users/danielefford/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar:/Users/danielefford/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/danielefford/.m2/repository/org/springframework/spring-core/6.2.7/spring-core-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-jcl/6.2.7/spring-jcl-6.2.7.jar:/Users/danielefford/.m2/repository/org/springframework/spring-test/6.2.7/spring-test-6.2.7.jar:/Users/danielefford/.m2/repository/org/xmlunit/xmlunit-core/2.10.1/xmlunit-core-2.10.1.jar:/Users/danielefford/.m2/repository/com/unboundid/unboundid-ldapsdk/7.0.2/unboundid-ldapsdk-7.0.2.jar:"/>
@@ -34,7 +34,7 @@
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250624134737797_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/target/surefire/surefirebooter-20250624155116472_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.2"/>
@@ -53,7 +53,7 @@
     <property name="user.dir" value="/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="20841"/>
+    <property name="PID" value="46610"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/danielefford/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -66,12 +66,12 @@
     <property name="java.class.version" value="67.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[tech-support-server] "/>
   </properties>
-  <testcase name="shouldHandleNullValuesProperly" classname="com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests" time="0.572">
-    <system-out><![CDATA[13:47:38.824 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.localtechsupport.repository.TechnicianRepositoryTest]: TechnicianRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-13:47:38.947 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TechnicianRepositoryTest
-13:47:38.965 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests]: DataIntegrityTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-13:47:38.972 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests
-13:47:39.020 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+  <testcase name="shouldHandleNullValuesProperly" classname="com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests" time="0.41">
+    <system-out><![CDATA[15:51:17.261 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.localtechsupport.repository.TechnicianRepositoryTest]: TechnicianRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:51:17.377 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TechnicianRepositoryTest
+15:51:17.396 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests]: DataIntegrityTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:51:17.405 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.localtechsupport.TechSupportServerApplication for test class com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests
+15:51:17.436 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -82,56 +82,56 @@
 
  :: Spring Boot ::                (v3.5.0)
 
-2025-06-24T13:47:39.279-02:30  INFO 20841 --- [tech-support-server] [           main] c.l.repository.TechnicianRepositoryTest  : Starting TechnicianRepositoryTest using Java 23.0.2 with PID 20841 (started by danielefford in /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server)
-2025-06-24T13:47:39.279-02:30 DEBUG 20841 --- [tech-support-server] [           main] c.l.repository.TechnicianRepositoryTest  : Running with Spring Boot v3.5.0, Spring v6.2.7
-2025-06-24T13:47:39.280-02:30  INFO 20841 --- [tech-support-server] [           main] c.l.repository.TechnicianRepositoryTest  : No active profile set, falling back to 1 default profile: "default"
-2025-06-24T13:47:39.669-02:30  INFO 20841 --- [tech-support-server] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-24T13:47:39.712-02:30  INFO 20841 --- [tech-support-server] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 7 JPA repository interfaces.
-2025-06-24T13:47:39.745-02:30  INFO 20841 --- [tech-support-server] [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
-2025-06-24T13:47:39.798-02:30  INFO 20841 --- [tech-support-server] [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:63d269cf-cf6d-412a-8e42-02fdc46e23ef;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2025-06-24T13:47:39.962-02:30  INFO 20841 --- [tech-support-server] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-24T13:47:39.992-02:30  INFO 20841 --- [tech-support-server] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
-2025-06-24T13:47:40.009-02:30  INFO 20841 --- [tech-support-server] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-24T13:47:40.165-02:30  INFO 20841 --- [tech-support-server] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-24T13:47:40.191-02:30  WARN 20841 --- [tech-support-server] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-24T13:47:40.200-02:30  INFO 20841 --- [tech-support-server] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@59f7c106']
+2025-06-24T15:51:17.694-02:30  INFO 46610 --- [tech-support-server] [           main] c.l.repository.TechnicianRepositoryTest  : Starting TechnicianRepositoryTest using Java 23.0.2 with PID 46610 (started by danielefford in /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server)
+2025-06-24T15:51:17.695-02:30 DEBUG 46610 --- [tech-support-server] [           main] c.l.repository.TechnicianRepositoryTest  : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-24T15:51:17.698-02:30  INFO 46610 --- [tech-support-server] [           main] c.l.repository.TechnicianRepositoryTest  : No active profile set, falling back to 1 default profile: "default"
+2025-06-24T15:51:18.169-02:30  INFO 46610 --- [tech-support-server] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-24T15:51:18.288-02:30  INFO 46610 --- [tech-support-server] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 7 JPA repository interfaces.
+2025-06-24T15:51:18.334-02:30  INFO 46610 --- [tech-support-server] [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2025-06-24T15:51:18.452-02:30  INFO 46610 --- [tech-support-server] [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:87f97bdb-8177-4e4b-999d-75dcc710fec4;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2025-06-24T15:51:18.648-02:30  INFO 46610 --- [tech-support-server] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-24T15:51:18.713-02:30  INFO 46610 --- [tech-support-server] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-24T15:51:18.780-02:30  INFO 46610 --- [tech-support-server] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-24T15:51:19.590-02:30  INFO 46610 --- [tech-support-server] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-24T15:51:19.885-02:30  WARN 46610 --- [tech-support-server] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-24T15:51:19.989-02:30  INFO 46610 --- [tech-support-server] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@4a453f8d']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-06-24T13:47:40.927-02:30  INFO 20841 --- [tech-support-server] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-24T13:47:40.935-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.627-02:30  INFO 46610 --- [tech-support-server] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24T15:51:22.635-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     drop table if exists appointments cascade 
 Hibernate: 
     drop table if exists appointments cascade 
-2025-06-24T13:47:40.937-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.637-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     drop table if exists clients cascade 
 Hibernate: 
     drop table if exists clients cascade 
-2025-06-24T13:47:40.938-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.637-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     drop table if exists feedback_entries cascade 
 Hibernate: 
     drop table if exists feedback_entries cascade 
-2025-06-24T13:47:40.938-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.637-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     drop table if exists technician_skills cascade 
 Hibernate: 
     drop table if exists technician_skills cascade 
-2025-06-24T13:47:40.938-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.638-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     drop table if exists technicians cascade 
 Hibernate: 
     drop table if exists technicians cascade 
-2025-06-24T13:47:40.938-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.638-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     drop table if exists ticket_history cascade 
 Hibernate: 
     drop table if exists ticket_history cascade 
-2025-06-24T13:47:40.938-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.638-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     drop table if exists tickets cascade 
 Hibernate: 
     drop table if exists tickets cascade 
-2025-06-24T13:47:40.941-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.641-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     create table appointments (
         status tinyint not null check (status between 0 and 5),
         created_at timestamp(6) with time zone not null,
@@ -155,7 +155,7 @@ Hibernate:
         updated_at timestamp(6) with time zone not null,
         primary key (id)
     )
-2025-06-24T13:47:40.953-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.650-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     create table clients (
         created_at timestamp(6) not null,
         id bigint generated by default as identity,
@@ -183,7 +183,7 @@ Hibernate:
         status enum ('ACTIVE','INACTIVE','SUSPENDED') not null,
         primary key (id)
     )
-2025-06-24T13:47:40.956-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.653-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     create table feedback_entries (
         rating integer not null,
         id bigint generated by default as identity,
@@ -203,7 +203,7 @@ Hibernate:
         created_by varchar(255) not null,
         primary key (id)
     )
-2025-06-24T13:47:40.956-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.655-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     create table technician_skills (
         id bigint generated by default as identity,
         technician_id bigint not null,
@@ -217,7 +217,7 @@ Hibernate:
         service_type enum ('HARDWARE','SOFTWARE') not null,
         primary key (id)
     )
-2025-06-24T13:47:40.957-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.656-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     create table technicians (
         id bigint generated by default as identity,
         email varchar(255) not null unique,
@@ -233,7 +233,7 @@ Hibernate:
         status enum ('ACTIVE','INACTIVE','IN_TRAINING','ON_VACATION','TERMINATED'),
         primary key (id)
     )
-2025-06-24T13:47:40.958-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.658-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     create table ticket_history (
         status tinyint not null check (status between 0 and 1),
         created_at timestamp(6) with time zone not null,
@@ -255,7 +255,7 @@ Hibernate:
         description varchar(255) not null,
         primary key (id)
     )
-2025-06-24T13:47:40.959-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.659-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     create table tickets (
         client_id bigint not null,
         created_at timestamp(6) with time zone not null,
@@ -279,7 +279,7 @@ Hibernate:
         status enum ('CLOSED','OPEN') not null,
         primary key (id)
     )
-2025-06-24T13:47:40.959-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.660-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     alter table if exists appointments 
        add constraint FK4wof45dihv1xh501qj9ahrrlh 
        foreign key (technician_id) 
@@ -289,7 +289,7 @@ Hibernate:
        add constraint FK4wof45dihv1xh501qj9ahrrlh 
        foreign key (technician_id) 
        references technicians
-2025-06-24T13:47:40.965-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.669-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     alter table if exists appointments 
        add constraint FKqytkgawwncn3y28njc50ofwk3 
        foreign key (ticket_id) 
@@ -299,7 +299,7 @@ Hibernate:
        add constraint FKqytkgawwncn3y28njc50ofwk3 
        foreign key (ticket_id) 
        references tickets
-2025-06-24T13:47:40.966-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.671-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     alter table if exists feedback_entries 
        add constraint FK6c7lxa1vnyye0rcxte7oom3oq 
        foreign key (ticket_id) 
@@ -309,7 +309,7 @@ Hibernate:
        add constraint FK6c7lxa1vnyye0rcxte7oom3oq 
        foreign key (ticket_id) 
        references tickets
-2025-06-24T13:47:40.966-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.675-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     alter table if exists technician_skills 
        add constraint FKrs9apsy55oobamg2fxof35o2t 
        foreign key (technician_id) 
@@ -319,7 +319,7 @@ Hibernate:
        add constraint FKrs9apsy55oobamg2fxof35o2t 
        foreign key (technician_id) 
        references technicians
-2025-06-24T13:47:40.967-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.678-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     alter table if exists ticket_history 
        add constraint FKkkhg6aquudxfcbofalx8rtc6v 
        foreign key (ticket_id) 
@@ -329,7 +329,7 @@ Hibernate:
        add constraint FKkkhg6aquudxfcbofalx8rtc6v 
        foreign key (ticket_id) 
        references tickets
-2025-06-24T13:47:40.968-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.679-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     alter table if exists tickets 
        add constraint FK1joe31w99hq84nhwci5lool5u 
        foreign key (technician_id) 
@@ -339,7 +339,7 @@ Hibernate:
        add constraint FK1joe31w99hq84nhwci5lool5u 
        foreign key (technician_id) 
        references technicians
-2025-06-24T13:47:40.970-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.682-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     alter table if exists tickets 
        add constraint FKlupqyilgsx29jeu9ad1ib5y85 
        foreign key (client_id) 
@@ -349,10 +349,10 @@ Hibernate:
        add constraint FKlupqyilgsx29jeu9ad1ib5y85 
        foreign key (client_id) 
        references clients
-2025-06-24T13:47:40.973-02:30  INFO 20841 --- [tech-support-server] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-24T13:47:41.172-02:30  INFO 20841 --- [tech-support-server] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-06-24T13:47:42.532-02:30  INFO 20841 --- [tech-support-server] [           main] c.l.repository.TechnicianRepositoryTest  : Started TechnicianRepositoryTest in 3.519 seconds (process running for 4.677)
-2025-06-24T13:47:42.928-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:22.687-02:30  INFO 46610 --- [tech-support-server] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-24T15:51:22.930-02:30  INFO 46610 --- [tech-support-server] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-24T15:51:24.357-02:30  INFO 46610 --- [tech-support-server] [           main] c.l.repository.TechnicianRepositoryTest  : Started TechnicianRepositoryTest in 6.927 seconds (process running for 7.839)
+2025-06-24T15:51:24.692-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -368,7 +368,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-24T13:47:43.047-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:24.727-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -390,8 +390,8 @@ WARNING: If a serviceability tool is not in use, please run with -Djdk.instrumen
 WARNING: Dynamic loading of agents will be disallowed by default in a future release
 ]]></system-err>
   </testcase>
-  <testcase name="shouldValidateEmailFormat" classname="com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests" time="0.02">
-    <system-out><![CDATA[2025-06-24T13:47:43.119-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldValidateEmailFormat" classname="com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests" time="0.016">
+    <system-out><![CDATA[2025-06-24T15:51:24.778-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -407,7 +407,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-24T13:47:43.126-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:24.782-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -423,8 +423,8 @@ Hibernate:
         (?, ?, ?, default)
 ]]></system-out>
   </testcase>
-  <testcase name="shouldNotAllowNullRequiredFields" classname="com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests" time="0.013">
-    <system-out><![CDATA[2025-06-24T13:47:43.135-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldNotAllowNullRequiredFields" classname="com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests" time="0.015">
+    <system-out><![CDATA[2025-06-24T15:51:24.795-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -440,7 +440,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-24T13:47:43.138-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:24.798-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -454,13 +454,13 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-24T13:47:43.140-02:30  WARN 20841 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
-2025-06-24T13:47:43.140-02:30 ERROR 20841 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "FULL_NAME"; SQL statement:
+2025-06-24T15:51:24.800-02:30  WARN 46610 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
+2025-06-24T15:51:24.800-02:30 ERROR 46610 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "FULL_NAME"; SQL statement:
 insert into technicians (email,full_name,status,id) values (?,?,?,default) [23502-232]
 ]]></system-out>
   </testcase>
-  <testcase name="shouldHandleCascadingOperationsWithSkills" classname="com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests" time="0.047">
-    <system-out><![CDATA[2025-06-24T13:47:43.149-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldHandleCascadingOperationsWithSkills" classname="com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests" time="0.028">
+    <system-out><![CDATA[2025-06-24T15:51:24.810-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -476,7 +476,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-24T13:47:43.152-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:24.813-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -490,7 +490,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-24T13:47:43.155-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:24.814-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technician_skills
@@ -504,7 +504,7 @@ Hibernate:
         (service_type, technician_id, id) 
     values
         (?, ?, default)
-2025-06-24T13:47:43.175-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:24.826-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         count(distinct t1_0.id) 
     from
@@ -524,7 +524,7 @@ Hibernate:
             on t1_0.id=s1_0.technician_id 
     where
         s1_0.service_type=?
-2025-06-24T13:47:43.187-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:24.832-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -546,8 +546,8 @@ Hibernate:
         t1_0.email=?
 ]]></system-out>
   </testcase>
-  <testcase name="shouldEnforceUniqueEmailConstraint" classname="com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests" time="0.008">
-    <system-out><![CDATA[2025-06-24T13:47:43.196-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+  <testcase name="shouldEnforceUniqueEmailConstraint" classname="com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests" time="0.009">
+    <system-out><![CDATA[2025-06-24T15:51:24.840-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     select
         t1_0.id,
         t1_0.email,
@@ -563,7 +563,7 @@ Hibernate:
         t1_0.status 
     from
         technicians t1_0
-2025-06-24T13:47:43.197-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:24.842-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -577,7 +577,7 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-24T13:47:43.198-02:30 DEBUG 20841 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
+2025-06-24T15:51:24.843-02:30 DEBUG 46610 --- [tech-support-server] [           main] org.hibernate.SQL                        : 
     insert 
     into
         technicians
@@ -591,8 +591,8 @@ Hibernate:
         (email, full_name, status, id) 
     values
         (?, ?, ?, default)
-2025-06-24T13:47:43.200-02:30  WARN 20841 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
-2025-06-24T13:47:43.200-02:30 ERROR 20841 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_56 ON PUBLIC.TECHNICIANS(EMAIL NULLS FIRST) VALUES ( /* 5 */ 'duplicate@example.com' )"; SQL statement:
+2025-06-24T15:51:24.845-02:30  WARN 46610 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
+2025-06-24T15:51:24.845-02:30 ERROR 46610 --- [tech-support-server] [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_56 ON PUBLIC.TECHNICIANS(EMAIL NULLS FIRST) VALUES ( /* 5 */ 'duplicate@example.com' )"; SQL statement:
 insert into technicians (email,full_name,status,id) values (?,?,?,default) [23505-232]
 ]]></system-out>
   </testcase>
