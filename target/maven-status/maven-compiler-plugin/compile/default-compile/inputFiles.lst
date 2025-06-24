@@ -8,12 +8,17 @@
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/AssignTechnicianRequest.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/CloseTicketRequest.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/CreateAppointmentRequest.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/CreateClientRequest.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/CreateTicketRequest.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/UnassignTechnicianRequest.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/UpdateAppointmentRequest.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/UpdateClientRequest.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/UpdateClientStatusRequest.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/request/UpdateStatusRequest.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/response/AppointmentResponse.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/response/AppointmentStatisticsResponse.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/response/ClientResponse.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/response/ClientStatisticsResponse.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/response/ClientSummaryResponse.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/response/TechnicianSummaryResponse.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/dto/response/TicketResponse.java
