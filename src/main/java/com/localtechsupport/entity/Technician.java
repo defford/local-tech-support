@@ -7,11 +7,13 @@ import java.util.List;
 import java.util.ArrayList; 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.EqualsAndHashCode;
 
 @Entity
 @Table(name = "technicians")
 @Data
 @NoArgsConstructor
+@EqualsAndHashCode(exclude = {"skills", "assignedTickets", "appointments"})
 public class Technician {
   @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
