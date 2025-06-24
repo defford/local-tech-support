@@ -503,8 +503,8 @@ class AppointmentRepositoryTest {
 
         @BeforeEach
         void setupTimeData() {
-            // Use consistent base time for this test class to avoid race conditions
-            baseTime = Instant.now();
+            // Use a fixed base time to avoid race conditions in CI environments
+            baseTime = Instant.parse("2024-01-15T10:00:00Z");
             hourAgo = baseTime.minus(1, ChronoUnit.HOURS);
             hourFromNow = baseTime.plus(1, ChronoUnit.HOURS);
             dayAgo = baseTime.minus(1, ChronoUnit.DAYS);

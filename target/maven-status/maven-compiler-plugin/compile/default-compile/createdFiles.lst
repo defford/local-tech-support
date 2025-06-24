@@ -44,5 +44,6 @@ com/localtechsupport/dto/response/AppointmentStatisticsResponse.class
 com/localtechsupport/entity/Technician.class
 com/localtechsupport/service/AppointmentService.class
 com/localtechsupport/dto/request/UpdateAppointmentRequest.class
+com/localtechsupport/service/ClientService$1.class
 com/localtechsupport/dto/request/CreateAppointmentRequest.class
 com/localtechsupport/dto/response/ClientSummaryResponse.class
