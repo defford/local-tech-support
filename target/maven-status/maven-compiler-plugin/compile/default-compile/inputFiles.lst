@@ -1,6 +1,7 @@
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/TechSupportServerApplication.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/config/package-info.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/controller/AppointmentController.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/controller/ClientController.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/controller/GlobalExceptionHandler.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/controller/TicketController.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/controller/package-info.java
