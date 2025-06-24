@@ -40,5 +40,6 @@
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/repository/TicketRepository.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/repository/package-info.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/service/AppointmentService.java
+/Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/service/ClientService.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/service/TicketService.java
 /Users/danielefford/Documents/SD12/04-DevOps/local-tech-support-server/src/main/java/com/localtechsupport/service/package-info.java
