@@ -3,6 +3,7 @@ package com.localtechsupport.service;
 import com.localtechsupport.entity.Client;
 import com.localtechsupport.entity.Client.ClientStatus;
 import com.localtechsupport.repository.ClientRepository;
+import com.localtechsupport.repository.TicketRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
@@ -29,6 +30,9 @@ class ClientServiceTest {
 
     @Mock
     private ClientRepository clientRepository;
+
+    @Mock
+    private TicketRepository ticketRepository;
 
     @InjectMocks
     private ClientService clientService;
@@ -384,12 +388,14 @@ class ClientServiceTest {
         void shouldDeleteInactiveClientSuccessfully() {
             // Given
             when(clientRepository.findById(2L)).thenReturn(Optional.of(inactiveClient));
+            when(ticketRepository.countByClient(inactiveClient)).thenReturn(0L);
 
             // When
             clientService.deleteClient(2L);
 
             // Then
             verify(clientRepository).findById(2L);
+            verify(ticketRepository).countByClient(inactiveClient);
             verify(clientRepository).deleteById(2L);
         }
 
@@ -418,6 +424,23 @@ class ClientServiceTest {
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessageContaining("Client not found with ID: 999");
 
+            verify(clientRepository, never()).deleteById(any());
+        }
+
+        @Test
+        @DisplayName("Should throw exception when trying to delete client with existing tickets")
+        void shouldThrowExceptionWhenTryingToDeleteClientWithExistingTickets() {
+            // Given
+            when(clientRepository.findById(2L)).thenReturn(Optional.of(inactiveClient));
+            when(ticketRepository.countByClient(inactiveClient)).thenReturn(3L);
+
+            // When & Then
+            assertThatThrownBy(() -> clientService.deleteClient(2L))
+                .isInstanceOf(IllegalStateException.class)
+                .hasMessageContaining("Cannot delete client with existing tickets. Found 3 tickets");
+
+            verify(clientRepository).findById(2L);
+            verify(ticketRepository).countByClient(inactiveClient);
             verify(clientRepository, never()).deleteById(any());
         }
     }

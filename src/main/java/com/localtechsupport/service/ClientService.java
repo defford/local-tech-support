@@ -3,6 +3,7 @@ package com.localtechsupport.service;
 import com.localtechsupport.entity.Client;
 import com.localtechsupport.entity.Client.ClientStatus;
 import com.localtechsupport.repository.ClientRepository;
+import com.localtechsupport.repository.TicketRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -29,10 +30,13 @@ import java.util.Optional;
 public class ClientService {
 
     private final ClientRepository clientRepository;
+    private final TicketRepository ticketRepository;
 
     @Autowired
-    public ClientService(ClientRepository clientRepository) {
+    public ClientService(ClientRepository clientRepository, 
+                        TicketRepository ticketRepository) {
         this.clientRepository = clientRepository;
+        this.ticketRepository = ticketRepository;
     }
 
     // === CORE CRUD OPERATIONS ===
@@ -108,6 +112,15 @@ public class ClientService {
         if (client.getStatus() == ClientStatus.ACTIVE) {
             throw new IllegalStateException("Cannot delete active client. Please deactivate first.");
         }
+
+        // Check for foreign key constraints before deletion
+        long ticketCount = ticketRepository.countByClient(client);
+        if (ticketCount > 0) {
+            throw new IllegalStateException("Cannot delete client with existing tickets. Found " + ticketCount + " tickets. Please close or reassign all tickets first.");
+        }
+
+        // Note: Since appointments are linked to tickets, and we check for tickets above,
+        // we don't need to separately check appointments as they'll be cleaned up when tickets are handled
 
         clientRepository.deleteById(clientId);
     }
