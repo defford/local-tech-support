@@ -1361,14 +1361,17 @@ class TicketRepositoryTest {
         }
 
         @Test
-        @DisplayName("Should not allow null required fields")
-        void shouldNotAllowNullRequiredFields() {
+        @DisplayName("Should not allow null required fields except client")
+        void shouldNotAllowNullRequiredFieldsExceptClient() {
             // Given
+            Client client = createTestClient("Required", "Field", "required.field@example.com");
+            entityManager.persistAndFlush(client);
+            
             Ticket ticket = new Ticket();
-            ticket.setServiceType(ServiceType.HARDWARE);
+            ticket.setClient(client);
+            // serviceType is null - this should throw an exception
             ticket.setDescription("Test");
             ticket.setDueAt(Instant.now().plus(1, ChronoUnit.DAYS));
-            // client is null - required field
 
             // When/Then
             assertThatThrownBy(() -> {
@@ -1425,6 +1428,26 @@ class TicketRepositoryTest {
             // Then
             assertThat(clientTickets).hasSize(2);
             assertThat(clientTickets).allMatch(t -> t.getClient().getId().equals(testClient1.getId()));
+        }
+
+        @Test
+        @DisplayName("Should allow null client field for orphaned tickets")
+        void shouldAllowNullClientFieldForOrphanedTickets() {
+            // Given
+            Ticket ticket = new Ticket();
+            ticket.setServiceType(ServiceType.HARDWARE);
+            ticket.setDescription("Orphaned ticket - client was deleted");
+            ticket.setDueAt(Instant.now().plus(1, ChronoUnit.DAYS));
+            ticket.setStatus(TicketStatus.OPEN);
+            // client is null - this should now be allowed
+
+            // When/Then
+            assertDoesNotThrow(() -> {
+                Ticket savedTicket = ticketRepository.save(ticket);
+                entityManager.flush();
+                assertThat(savedTicket.getClient()).isNull();
+                assertThat(savedTicket.hasAssignedClient()).isFalse();
+            });
         }
     }
 } 

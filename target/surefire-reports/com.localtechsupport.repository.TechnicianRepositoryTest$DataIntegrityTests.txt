@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.80 s -- in com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 s -- in com.localtechsupport.repository.TechnicianRepositoryTest$DataIntegrityTests

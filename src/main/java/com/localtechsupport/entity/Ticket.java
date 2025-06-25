@@ -17,8 +17,8 @@ public class Ticket {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "client_id", nullable = false)
+    @ManyToOne(optional = true)
+    @JoinColumn(name = "client_id", nullable = true)
     private Client client;
 
     @Enumerated(EnumType.STRING)
@@ -56,6 +56,13 @@ public class Ticket {
         this.dueAt = dueAt;
     }
 
+    // Additional constructor for tickets without an assigned client
+    public Ticket(ServiceType serviceType, String description, Instant dueAt) {
+        this.serviceType = serviceType;
+        this.description = description;
+        this.dueAt = dueAt;
+    }
+
 // lifecycle hooks
     @PrePersist
     protected void onCreate() {
@@ -69,6 +76,10 @@ public class Ticket {
       
       public boolean isOverdue() {
         return isOpen() && dueAt != null && Instant.now().isAfter(dueAt);
+      }
+
+      public boolean hasAssignedClient() {
+        return client != null;
       }
       
       public void addHistory(TicketHistory entry) {

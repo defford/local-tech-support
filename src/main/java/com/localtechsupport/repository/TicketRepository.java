@@ -140,6 +140,9 @@ public interface TicketRepository extends JpaRepository<Ticket, Long> {
     
     long countByClient(Client client);
     
+    @Query("SELECT COUNT(t) FROM Ticket t WHERE t.client = :client AND t.status = :status")
+    long countByClientAndStatus(@Param("client") Client client, @Param("status") TicketStatus status);
+    
     long countByCreatedAtAfter(Instant dateTime);
     
     @Query(COUNT_OVERDUE_QUERY)

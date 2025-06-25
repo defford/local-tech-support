@@ -2,6 +2,8 @@ package com.localtechsupport.service;
 
 import com.localtechsupport.entity.Client;
 import com.localtechsupport.entity.Client.ClientStatus;
+import com.localtechsupport.entity.Ticket;
+import com.localtechsupport.entity.TicketStatus;
 import com.localtechsupport.repository.ClientRepository;
 import com.localtechsupport.repository.TicketRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -103,7 +106,8 @@ public class ClientService {
     }
 
     /**
-     * Deletes a client by ID.
+     * Deletes a client by ID with proper validation.
+     * Automatically unassigns any tickets from the client before deletion.
      */
     public void deleteClient(Long clientId) {
         Client client = getClientById(clientId);
@@ -113,15 +117,14 @@ public class ClientService {
             throw new IllegalStateException("Cannot delete active client. Please deactivate first.");
         }
 
-        // Check for foreign key constraints before deletion
-        long ticketCount = ticketRepository.countByClient(client);
-        if (ticketCount > 0) {
-            throw new IllegalStateException("Cannot delete client with existing tickets. Found " + ticketCount + " tickets. Please close or reassign all tickets first.");
+        // Unassign tickets from this client before deletion
+        List<Ticket> clientTickets = ticketRepository.findByClient(client);
+        for (Ticket ticket : clientTickets) {
+            ticket.setClient(null);
+            ticketRepository.save(ticket);
         }
 
-        // Note: Since appointments are linked to tickets, and we check for tickets above,
-        // we don't need to separately check appointments as they'll be cleaned up when tickets are handled
-
+        // Now delete the client
         clientRepository.deleteById(clientId);
     }
 
