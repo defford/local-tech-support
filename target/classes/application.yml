@@ -57,4 +57,79 @@ spring:
       ddl-auto: update
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect 
+        dialect: org.hibernate.dialect.MySQLDialect
+
+---
+# MySQL Development Configuration (MySQL with sample data)
+spring:
+  config:
+    activate:
+      on-profile: mysql-dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/techsupport
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${DB_USERNAME:techsupport}
+    password: ${DB_PASSWORD:password}
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+  sql:
+    init:
+      mode: always
+      data-locations: classpath:data.sql
+
+# Development-specific logging
+logging:
+  level:
+    org.springframework.jdbc.datasource.init: DEBUG
+    com.localtechsupport: DEBUG
+
+---
+# Production Configuration (MySQL with production settings)
+spring:
+  config:
+    activate:
+      on-profile: production
+  datasource:
+    url: ${DATABASE_URL:jdbc:mysql://localhost:3306/techsupport}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${DB_USERNAME:techsupport}
+    password: ${DB_PASSWORD:password}
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        jdbc:
+          batch_size: 25
+        order_inserts: true
+        order_updates: true
+  sql:
+    init:
+      mode: never
+
+# Production server settings
+server:
+  port: ${PORT:8080}
+
+# Production logging
+logging:
+  level:
+    com.localtechsupport: INFO
+    org.springframework.web: WARN
+    org.hibernate.SQL: WARN
+    org.springframework.jdbc.datasource.init: WARN 
