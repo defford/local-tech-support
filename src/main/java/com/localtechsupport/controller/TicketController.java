@@ -74,6 +74,21 @@ public class TicketController {
     }
 
     /**
+     * Delete a ticket by ID.
+     */
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteTicket(@PathVariable Long id) {
+        try {
+            ticketService.deleteTicket(id);
+            return ResponseEntity.noContent().build();
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.notFound().build();
+        } catch (IllegalStateException e) {
+            return ResponseEntity.badRequest().build();
+        }
+    }
+
+    /**
      * Get all tickets with pagination and sorting.
      */
     @GetMapping
@@ -94,7 +109,9 @@ public class TicketController {
         Page<Ticket> tickets;
         
         // Apply filters based on query parameters
-        if (status != null) {
+        if (status != null && serviceType != null) {
+            tickets = ticketService.findTicketsByStatusAndServiceType(status, serviceType, pageable);
+        } else if (status != null) {
             tickets = ticketService.findTicketsByStatus(status, pageable);
         } else if (clientId != null) {
             tickets = ticketService.findTicketsByClient(clientId, pageable);

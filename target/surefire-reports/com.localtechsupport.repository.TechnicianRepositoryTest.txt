@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.localtechsupport.repository.TechnicianRepositoryTest
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.529 s -- in com.localtechsupport.repository.TechnicianRepositoryTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.817 s -- in com.localtechsupport.repository.TechnicianRepositoryTest
