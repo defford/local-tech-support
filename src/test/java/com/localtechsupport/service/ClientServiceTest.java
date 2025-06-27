@@ -2,6 +2,8 @@ package com.localtechsupport.service;
 
 import com.localtechsupport.entity.Client;
 import com.localtechsupport.entity.Client.ClientStatus;
+import com.localtechsupport.entity.Ticket;
+import com.localtechsupport.entity.TicketStatus;
 import com.localtechsupport.repository.ClientRepository;
 import com.localtechsupport.repository.TicketRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -48,6 +50,7 @@ class ClientServiceTest {
     private Client inactiveClient;
     private Client suspendedClient;
     private Client newClient;
+    private Ticket testTicket;
 
     @BeforeEach
     void setUp() {
@@ -74,6 +77,9 @@ class ClientServiceTest {
         
         newClient = createTestClient(null, "Alice", "Williams", "alice.williams@example.com", 
             "+1122334455", "789 Pine Rd", "New client", ClientStatus.ACTIVE, now);
+
+        testTicket = new Ticket();
+        testTicket.setClient(activeClient);
     }
 
     // === TEST HELPER METHODS ===
@@ -388,14 +394,33 @@ class ClientServiceTest {
         void shouldDeleteInactiveClientSuccessfully() {
             // Given
             when(clientRepository.findById(2L)).thenReturn(Optional.of(inactiveClient));
-            when(ticketRepository.countByClient(inactiveClient)).thenReturn(0L);
+            when(ticketRepository.findByClient(inactiveClient)).thenReturn(new ArrayList<>());
 
             // When
             clientService.deleteClient(2L);
 
             // Then
             verify(clientRepository).findById(2L);
-            verify(ticketRepository).countByClient(inactiveClient);
+            verify(ticketRepository).findByClient(inactiveClient);
+            verify(clientRepository).deleteById(2L);
+        }
+
+        @Test
+        @DisplayName("Should delete inactive client and unassign tickets successfully")
+        void shouldDeleteInactiveClientAndUnassignTicketsSuccessfully() {
+            // Given
+            List<Ticket> clientTickets = Arrays.asList(testTicket);
+            when(clientRepository.findById(2L)).thenReturn(Optional.of(inactiveClient));
+            when(ticketRepository.findByClient(inactiveClient)).thenReturn(clientTickets);
+
+            // When
+            clientService.deleteClient(2L);
+
+            // Then
+            verify(clientRepository).findById(2L);
+            verify(ticketRepository).findByClient(inactiveClient);
+            verify(ticketRepository).save(testTicket);
+            assertThat(testTicket.getClient()).isNull();
             verify(clientRepository).deleteById(2L);
         }
 
@@ -427,22 +452,7 @@ class ClientServiceTest {
             verify(clientRepository, never()).deleteById(any());
         }
 
-        @Test
-        @DisplayName("Should throw exception when trying to delete client with existing tickets")
-        void shouldThrowExceptionWhenTryingToDeleteClientWithExistingTickets() {
-            // Given
-            when(clientRepository.findById(2L)).thenReturn(Optional.of(inactiveClient));
-            when(ticketRepository.countByClient(inactiveClient)).thenReturn(3L);
 
-            // When & Then
-            assertThatThrownBy(() -> clientService.deleteClient(2L))
-                .isInstanceOf(IllegalStateException.class)
-                .hasMessageContaining("Cannot delete client with existing tickets. Found 3 tickets");
-
-            verify(clientRepository).findById(2L);
-            verify(ticketRepository).countByClient(inactiveClient);
-            verify(clientRepository, never()).deleteById(any());
-        }
     }
 
     // === STATUS MANAGEMENT TESTS ===

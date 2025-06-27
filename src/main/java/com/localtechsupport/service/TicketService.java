@@ -56,22 +56,34 @@ public class TicketService {
             throw new IllegalStateException("Cannot create ticket for inactive client: " + client.getEmail());
         }
 
-        // Create ticket with auto-calculated due date
-        Ticket ticket = new Ticket();
-        ticket.setClient(client);
-        ticket.setServiceType(serviceType);
-        ticket.setDescription(description);
-        ticket.setStatus(TicketStatus.OPEN);
-        ticket.setDueAt(calculateDueDate(serviceType));
-        
-        // Save ticket
+        // Calculate due date (default: 24 hours for hardware, 48 hours for software)
+        int hoursToAdd = (serviceType == ServiceType.HARDWARE) ? 24 : 48;
+        Instant dueDate = Instant.now().plus(hoursToAdd, ChronoUnit.HOURS);
+
+        // Create and save ticket
+        Ticket ticket = new Ticket(client, serviceType, description, dueDate);
         Ticket savedTicket = ticketRepository.save(ticket);
         
         // Create initial history entry
-        createHistoryEntry(savedTicket, TicketStatus.OPEN, 
-            "Ticket created - " + serviceType + " support request", "SYSTEM");
+        createHistoryEntry(savedTicket, TicketStatus.OPEN, "Ticket created", "SYSTEM");
         
         return savedTicket;
+    }
+
+    /**
+     * Deletes a ticket by ID with proper validation.
+     * Business rule: Only allow deletion of closed tickets to preserve audit trail.
+     */
+    public void deleteTicket(Long ticketId) {
+        Ticket ticket = getTicketById(ticketId);
+        
+        // Business rule: Only allow deletion of closed tickets
+        if (ticket.getStatus() != TicketStatus.CLOSED) {
+            throw new IllegalStateException("Cannot delete open ticket. Please close the ticket first.");
+        }
+
+        // Delete the ticket (cascade will handle related entities)
+        ticketRepository.deleteById(ticketId);
     }
 
     /**
@@ -243,6 +255,11 @@ public class TicketService {
     @Transactional(readOnly = true)
     public Page<Ticket> findTicketsByServiceType(ServiceType serviceType, Pageable pageable) {
         return ticketRepository.findByServiceType(serviceType, pageable);
+    }
+
+    @Transactional(readOnly = true)
+    public Page<Ticket> findTicketsByStatusAndServiceType(TicketStatus status, ServiceType serviceType, Pageable pageable) {
+        return ticketRepository.findByStatusAndServiceType(status, serviceType, pageable);
     }
 
     // === ASSIGNMENT OPTIMIZATION ===

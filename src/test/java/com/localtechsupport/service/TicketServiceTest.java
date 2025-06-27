@@ -669,6 +669,61 @@ class TicketServiceTest {
         }
     }
 
+    @Nested
+    @DisplayName("Delete Ticket")
+    class DeleteTicketTests {
+
+        @Test
+        @DisplayName("Should delete closed ticket successfully")
+        void shouldDeleteClosedTicketSuccessfully() {
+            // Arrange
+            Long ticketId = 2L;
+            when(ticketRepository.findById(ticketId)).thenReturn(Optional.of(closedTicket));
+            doNothing().when(ticketRepository).deleteById(ticketId);
+
+            // Act
+            ticketService.deleteTicket(ticketId);
+
+            // Assert
+            verify(ticketRepository).findById(ticketId);
+            verify(ticketRepository).deleteById(ticketId);
+        }
+
+        @Test
+        @DisplayName("Should throw exception when trying to delete open ticket")
+        void shouldThrowExceptionWhenTryingToDeleteOpenTicket() {
+            // Arrange
+            Long ticketId = 1L;
+            when(ticketRepository.findById(ticketId)).thenReturn(Optional.of(openTicket));
+
+            // Act & Assert
+            assertThatThrownBy(() -> 
+                ticketService.deleteTicket(ticketId)
+            ).isInstanceOf(IllegalStateException.class)
+             .hasMessageContaining("Cannot delete open ticket. Please close the ticket first.");
+
+            verify(ticketRepository).findById(ticketId);
+            verify(ticketRepository, never()).deleteById(any());
+        }
+
+        @Test
+        @DisplayName("Should throw exception when ticket not found for deletion")
+        void shouldThrowExceptionWhenTicketNotFoundForDeletion() {
+            // Arrange
+            Long nonExistentTicketId = 999L;
+            when(ticketRepository.findById(nonExistentTicketId)).thenReturn(Optional.empty());
+
+            // Act & Assert
+            assertThatThrownBy(() -> 
+                ticketService.deleteTicket(nonExistentTicketId)
+            ).isInstanceOf(IllegalArgumentException.class)
+             .hasMessageContaining("Ticket not found with ID: " + nonExistentTicketId);
+
+            verify(ticketRepository).findById(nonExistentTicketId);
+            verify(ticketRepository, never()).deleteById(any());
+        }
+    }
+
     // === HELPER METHODS FOR TEST DATA CREATION ===
 
     private Client createActiveClient(Long id, String email) {
