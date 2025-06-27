@@ -10,33 +10,19 @@ A comprehensive Spring Boot REST API application for managing technical support 
 - **Appointment Scheduling**: Schedule and manage service appointments
 - **Feedback System**: Collect and analyze customer feedback
 - **Real-time Statistics**: Get insights into support operations
-- **Multiple Database Support**: H2 (development) and MySQL (production)
-- **Sample Data**: Pre-loaded realistic test data for development
+- **MySQL Database**: Production-ready database with comprehensive sample data
+- **Sample Data**: Pre-loaded realistic test data for development and testing
 
 ## 📋 Prerequisites
 
 - **Java 21** or higher
 - **Maven 3.6+**
-- **MySQL 8.0+** (for production/mysql profiles)
+- **MySQL 8.0+**
 
 ## 🛠️ Quick Start
 
-### Option 1: H2 Database (Easiest - No Setup Required)
-```bash
-# Clone the repository
-git clone <your-repo-url>
-cd local-tech-support-server
+### MySQL Database Setup with Sample Data
 
-# Run with H2 in-memory database
-mvn spring-boot:run -Dspring-boot.run.profiles=dev
-
-# Access H2 Console: http://localhost:8080/h2-console
-# JDBC URL: jdbc:h2:mem:techsupport
-# Username: sa
-# Password: (leave empty)
-```
-
-### Option 2: MySQL Database with Sample Data
 ```bash
 # 1. Install and start MySQL
 brew install mysql
@@ -55,24 +41,15 @@ EXIT;
 ```
 
 ```bash
-# 3. Run application with MySQL and sample data
+# 3. Clone the repository
+git clone <your-repo-url>
+cd local-tech-support-server
+
+# 4. Run application with MySQL and sample data
 mvn spring-boot:run -Dspring-boot.run.profiles=mysql-dev
 ```
 
-### Option 3: MySQL Database (Production-like)
-```bash
-# Run with MySQL (no sample data)
-mvn spring-boot:run -Dspring-boot.run.profiles=mysql
-```
-
-## 🎯 Application Profiles
-
-| Profile | Database | Sample Data | Use Case |
-|---------|----------|-------------|-----------|
-| `dev` | H2 (in-memory) | ✅ Yes | Development, testing |
-| `mysql` | MySQL | ❌ No | Production-like setup |
-| `mysql-dev` | MySQL | ✅ Yes | Development with MySQL |
-| `production` | MySQL | ❌ No | Production deployment |
+The application will start on `http://localhost:8080` with a fully populated MySQL database containing sample data.
 
 ## 🌐 API Endpoints
 
@@ -121,7 +98,7 @@ Base URL: `http://localhost:8080/api`
 
 ## 📊 Sample Data
 
-When running with sample data enabled (`dev` or `mysql-dev` profiles), you get:
+The application comes pre-loaded with comprehensive sample data:
 
 - **8 Clients** with diverse profiles and contact information
 - **5 Technicians** with different specializations and statuses
@@ -139,7 +116,7 @@ export DB_USERNAME=your_mysql_username
 export DB_PASSWORD=your_mysql_password
 export DATABASE_URL=jdbc:mysql://localhost:3306/your_database
 
-mvn spring-boot:run -Dspring-boot.run.profiles=mysql
+mvn spring-boot:run -Dspring-boot.run.profiles=mysql-dev
 ```
 
 ## 🧪 Testing the API
@@ -171,13 +148,7 @@ curl -X GET http://localhost:8080/api/tickets
 
 ## 🗄️ Database Access
 
-### H2 Console (dev profile)
-- URL: `http://localhost:8080/h2-console`
-- JDBC URL: `jdbc:h2:mem:techsupport`
-- Username: `sa`
-- Password: (empty)
-
-### MySQL (mysql/mysql-dev profiles)
+### MySQL Database
 ```bash
 mysql -u techsupport -p techsupport
 # Password: password
@@ -244,17 +215,20 @@ mvn clean compile
 lsof -i :8080
 ```
 
-### No Sample Data Loaded
-Make sure you're using the correct profile:
-- `dev` for H2 with sample data
-- `mysql-dev` for MySQL with sample data
-- Profiles `mysql` and `production` do NOT load sample data
+### Database Connection Problems
+```bash
+# Test MySQL connection
+mysql -u techsupport -p -h localhost techsupport
+
+# Verify database exists
+mysql -u root -p -e "SHOW DATABASES;"
+```
 
 ## 🔒 Security Notes
 
-**Development Only**: The current configuration is for development purposes. For production deployment:
+**Development Configuration**: The current setup uses default credentials for development. For production deployment:
 
-1. Change default passwords
+1. Change default database passwords
 2. Use environment variables for sensitive data
 3. Enable HTTPS
 4. Add authentication and authorization
@@ -285,10 +259,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - [ ] Install Java 21+
 - [ ] Install Maven 3.6+
+- [ ] Install and configure MySQL
+- [ ] Create techsupport database and user
 - [ ] Clone the repository
-- [ ] Choose your database option (H2 or MySQL)
-- [ ] Run with appropriate profile
+- [ ] Run with mysql-dev profile
 - [ ] Test API endpoints
-- [ ] Explore sample data
+- [ ] Explore sample data in MySQL
 
 **Happy coding! 🎉** 
