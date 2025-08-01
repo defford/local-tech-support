@@ -3,3 +3,37 @@
 
 #Ignore cursor AI rules
 .cursor/rules/codacy.mdc
+docs/
+
+# Compiled class files
+*.class
+
+# Maven build directory
+target/
+
+# Gradle build directory
+build/
+
+# Package archives
+*.jar
+*.war
+*.ear
+
+# Eclipse
+*.classpath
+*.project
+.settings/
+
+# IntelliJ IDEA
+*.iml
+.idea/
+
+# VS Code
+.vscode/
+
+# Log files
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
