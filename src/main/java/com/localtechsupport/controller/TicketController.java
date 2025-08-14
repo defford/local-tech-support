@@ -48,12 +48,21 @@ public class TicketController {
      */
     @PostMapping
     public ResponseEntity<TicketResponse> createTicket(@Valid @RequestBody CreateTicketRequest request) {
-        Ticket ticket = ticketService.createTicket(
-            request.getClientId(),
-            request.getServiceType(),
-            request.getDescription(),
-            request.getPriority()
-        );
+        Ticket ticket;
+        if (request.getPriority() == null) {
+            ticket = ticketService.createTicket(
+                request.getClientId(),
+                request.getServiceType(),
+                request.getDescription()
+            );
+        } else {
+            ticket = ticketService.createTicket(
+                request.getClientId(),
+                request.getServiceType(),
+                request.getDescription(),
+                request.getPriority()
+            );
+        }
         
         TicketResponse response = mapToTicketResponse(ticket);
         return new ResponseEntity<>(response, HttpStatus.CREATED);
