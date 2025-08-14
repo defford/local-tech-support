@@ -51,7 +51,8 @@ public class TicketController {
         Ticket ticket = ticketService.createTicket(
             request.getClientId(),
             request.getServiceType(),
-            request.getDescription()
+            request.getDescription(),
+            request.getPriority()
         );
         
         TicketResponse response = mapToTicketResponse(ticket);
@@ -350,6 +351,7 @@ public class TicketController {
             ticket.getServiceType(),
             ticket.getDescription(),
             ticket.getStatus(),
+            ticket.getPriority(),
             ticket.getDueAt(),
             ticket.getCreatedAt(),
             ticket.getCreatedAt() // Using createdAt as updatedAt since entity doesn't have updatedAt field

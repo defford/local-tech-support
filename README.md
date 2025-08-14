@@ -42,7 +42,7 @@ EXIT;
 ### Run the Application
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/defford/local-tech-support
 cd local-tech-support-server
 
 # Run application with MySQL and sample data

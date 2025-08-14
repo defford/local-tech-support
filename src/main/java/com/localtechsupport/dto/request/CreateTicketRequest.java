@@ -1,6 +1,7 @@
 package com.localtechsupport.dto.request;
 
 import com.localtechsupport.entity.ServiceType;
+import com.localtechsupport.entity.TicketPriority;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
@@ -24,6 +25,8 @@ public class CreateTicketRequest {
     @Size(min = 10, max = 1000, message = "Description must be between 10 and 1000 characters")
     private String description;
 
+    private TicketPriority priority; // optional; defaults server-side
+
     // Default constructor
     public CreateTicketRequest() {}
 
@@ -32,6 +35,14 @@ public class CreateTicketRequest {
         this.clientId = clientId;
         this.serviceType = serviceType;
         this.description = description;
+    }
+
+    public TicketPriority getPriority() {
+        return priority;
+    }
+
+    public void setPriority(TicketPriority priority) {
+        this.priority = priority;
     }
 
     // Getters and setters
@@ -65,6 +76,7 @@ public class CreateTicketRequest {
                 "clientId=" + clientId +
                 ", serviceType=" + serviceType +
                 ", description='" + description + '\'' +
+                ", priority=" + priority +
                 '}';
     }
 } 
