@@ -38,6 +38,10 @@ public class Ticket {
     @Column(nullable = false)
     private TicketStatus status = TicketStatus.OPEN;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "priority", nullable = false)
+    private TicketPriority priority = TicketPriority.NORMAL;
+
     @ManyToOne
     @JoinColumn(name = "technician_id")
     private Technician assignedTechnician;

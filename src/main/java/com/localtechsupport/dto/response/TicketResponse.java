@@ -2,6 +2,7 @@ package com.localtechsupport.dto.response;
 
 import com.localtechsupport.entity.ServiceType;
 import com.localtechsupport.entity.TicketStatus;
+import com.localtechsupport.entity.TicketPriority;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.time.Instant;
@@ -19,6 +20,7 @@ public class TicketResponse {
     private ServiceType serviceType;
     private String description;
     private TicketStatus status;
+    private TicketPriority priority;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "UTC")
     private Instant dueAt;
@@ -35,13 +37,14 @@ public class TicketResponse {
     // Constructor with all fields
     public TicketResponse(Long id, ClientSummaryResponse client, TechnicianSummaryResponse assignedTechnician,
                          ServiceType serviceType, String description, TicketStatus status,
-                         Instant dueAt, Instant createdAt, Instant updatedAt) {
+                         TicketPriority priority, Instant dueAt, Instant createdAt, Instant updatedAt) {
         this.id = id;
         this.client = client;
         this.assignedTechnician = assignedTechnician;
         this.serviceType = serviceType;
         this.description = description;
         this.status = status;
+        this.priority = priority;
         this.dueAt = dueAt;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
@@ -96,6 +99,14 @@ public class TicketResponse {
         this.status = status;
     }
 
+    public TicketPriority getPriority() {
+        return priority;
+    }
+
+    public void setPriority(TicketPriority priority) {
+        this.priority = priority;
+    }
+
     public Instant getDueAt() {
         return dueAt;
     }
@@ -138,6 +149,7 @@ public class TicketResponse {
                 ", serviceType=" + serviceType +
                 ", description='" + description + '\'' +
                 ", status=" + status +
+                ", priority=" + priority +
                 ", dueAt=" + dueAt +
                 ", createdAt=" + createdAt +
                 ", updatedAt=" + updatedAt +

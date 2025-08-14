@@ -48,6 +48,13 @@ public class TicketService {
      * Creates a new support ticket with validation and history tracking.
      */
     public Ticket createTicket(Long clientId, ServiceType serviceType, String description) {
+        return createTicket(clientId, serviceType, description, null);
+    }
+
+    /**
+     * Creates a new support ticket with an optional priority.
+     */
+    public Ticket createTicket(Long clientId, ServiceType serviceType, String description, TicketPriority priority) {
         // Validate client exists and is active
         Client client = clientRepository.findById(clientId)
             .orElseThrow(() -> new IllegalArgumentException("Client not found with ID: " + clientId));
@@ -62,6 +69,8 @@ public class TicketService {
 
         // Create and save ticket
         Ticket ticket = new Ticket(client, serviceType, description, dueDate);
+        // Set priority, defaulting to NORMAL if not provided
+        ticket.setPriority(priority != null ? priority : TicketPriority.NORMAL);
         Ticket savedTicket = ticketRepository.save(ticket);
         
         // Create initial history entry
@@ -328,11 +337,7 @@ public class TicketService {
         ticketHistoryRepository.save(history);
     }
 
-    private Instant calculateDueDate(ServiceType serviceType) {
-        // Business rule: Hardware issues get 24 hours, Software gets 48 hours
-        int hours = (serviceType == ServiceType.HARDWARE) ? 24 : 48;
-        return Instant.now().plus(hours, ChronoUnit.HOURS);
-    }
+    // intentionally empty for now; due date is derived during creation
 
     private boolean isValidStatusTransition(TicketStatus from, TicketStatus to) {
         // Simple validation: Can only go from OPEN to CLOSED or stay the same
